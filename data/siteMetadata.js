@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'Blog của Cường',
+  author: 'Trịnh Cao Cường',
+  headerTitle: 'Blog của Cường',
+  description: 'Blog chia sẻ và tổng hợp kiến thức lập trình và IoT',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
@@ -10,12 +10,12 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
+  email: 'trinhcuong297@gmail.com',
+  github: 'https://github.com/trinhcuong297',
   twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  facebook: 'https://www.facebook.com/profile.php?id=100031175888976',
+  youtube: 'https://youtube.comhttps://www.youtube.com/channel/UCbJhVG6t2ySBqdOmSF4bzqg',
+  linkedin: 'https://www.linkedin.com/in/c%C6%B0%E1%BB%9Dng-tr%E1%BB%8Bnh-7451b2233/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
@@ -27,7 +27,7 @@ const siteMetadata = {
     googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
   },
   newsletter: {
-    // supports mailchimp, buttondown, convertkit, klaviyo, revue
+    // supports mailchimp, buttondown, convertkit, klaviyo
     // Please add your .env file and modify it according to your selection
     provider: 'buttondown',
   },
@@ -51,10 +51,6 @@ const siteMetadata = {
       // theme example: light, dark, dark_dimmed, dark_high_contrast
       // transparent_dark, preferred_color_scheme, custom
       theme: 'light',
-      // Place the comment box above the comments. options: bottom, top
-      inputPosition: 'bottom',
-      // Choose the language giscus will be displayed in. options: en, es, zh-CN, zh-TW, ko, ja etc
-      lang: 'en',
       // theme when dark mode
       darkTheme: 'transparent_dark',
       // If the theme option above is set to 'custom`

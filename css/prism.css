@@ -138,3 +138,8 @@
 .token.table {
   display: inline;
 }
+
+html::-webkit-scrollbar {
+  width: 0px;
+  background-color: #ffffff;
+}

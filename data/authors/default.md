@@ -1,16 +1,14 @@
 ---
-name: Tails Azimuth
+name: Trịnh Cao Cường
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
+occupation: Autumation Engineering
+company: Ha Noi University of Science and Technology
+email: trinhcuong297@gmail.com
 twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+linkedin: https://www.linkedin.com/in/c%C6%B0%E1%BB%9Dng-tr%E1%BB%8Bnh-7451b2233/
+github: https://github.com/trinhcuong297
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+Mình là 1 sinh viên ngành Tự động hóa trường ĐH Bách Khoa HN.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Blog này là nơi mình chia sẻ về kiến thức lập trình cũng như IoT.
