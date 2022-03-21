@@ -2,7 +2,7 @@ import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 
-import cdata from '@/data/learn/c'
+import cppdata from '@/data/learn/c++'
 import CardCourse from '@/components/CardCourse'
 
 
@@ -13,7 +13,7 @@ export default function Home() {
       <div className="space-y-2 px-3 pt-6 pb-4 md:space-y-3">
         <Link href="/learn">
           <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-indigo-600 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
-            Tổng hợp kiến thức lập trình C
+            Tổng hợp kiến thức lập trình C++
           </h1>
         </Link>
         <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
@@ -22,7 +22,7 @@ export default function Home() {
       </div>
       <div className="container px-3 py-4">
         <div className="-m-4 flex flex-wrap">
-          {cdata.map((d) => (
+          {cppdata.map((d) => (
             // eslint-disable-next-line react/jsx-key
             <CardCourse key={d.title} title={d.title} data={d.data} href={d.href} />
           ))}
