@@ -33,6 +33,14 @@ const CardCourseExplain = ({ title, data, href }) => {
           className="fixed h-full w-full cursor-auto focus:outline-none"
           onClick={onToggleNav}
         ></button>
+        <nav className="fixed flex h-full w-11/12 md:w-7/12 items-center justify-center">
+          <div className="w-full rounded-md border border-indigo-600 border-opacity-60 bg-violet-50 p-5 shadow-lg shadow-indigo-500/50 dark:border-gray-700">
+            {data.map((a) => {
+              // eslint-disable-next-line react/jsx-key
+              return <pre className="max-h-[32rem] dark:text-lime-900 overflow-auto snap-y snap-mandatory">{a}</pre>
+            })}
+          </div>
+        </nav>
         <button
           type="button"
           aria-label="toggle modal"
@@ -52,14 +60,6 @@ const CardCourseExplain = ({ title, data, href }) => {
             />
           </svg>
         </button>
-        <nav className="fixed flex h-full w-7/12 items-center justify-center">
-          <div className="w-full rounded-md border border-indigo-600 border-opacity-60 bg-violet-50 p-5 shadow-lg shadow-indigo-500/50 dark:border-gray-700">
-            {data.map((a) => {
-              // eslint-disable-next-line react/jsx-key
-              return <pre className="dark:text-lime-900">{a}</pre>
-            })}
-          </div>
-        </nav>
       </div>
     </div>
   )
