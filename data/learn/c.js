@@ -1,7 +1,8 @@
 const cdata = [
   {
     title: `Kiểu dữ liệu`,
-    data: ['Trong C có các kiểu dữ liệu sau đây:', 'int :số tự nhiên'],
+    data: [`'Trong C có cá
+    c kiểu dữ liệu sau đây:', 'int :số tự nhiên'`],
     href: '/learn/c',
   },
   {
