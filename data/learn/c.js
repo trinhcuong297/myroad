@@ -31,18 +31,48 @@ void                   là kiểu dữ liệu xác định không có giá trị
     title: `Nhập/Xuất`,
     data: [
 `
-                                                               
-                                                               
-                                                               
-                                                               
-                                                               
-                                                               
-                                                               
-                                                               
-                                                               
-                                                               
-                                                               
+Để tạo lệnh input/output, chúng ta dùng các hàm printf(), scanf(), gets(), puts() , fprintf() , sprintf() , fscanf() và sscanf().
 
+Lệnh scanf() lấy dữ liệu được nhập từ bàn phím, từ bắt đầu đến khi chạm đến khoảng trắng đầu tiên, kết thúc khi gặp kí tự xuống dòng(enter)
+Lệnh printf() in ra dữ liệu.                                  
+VD sử dụng scanf() và printf():
+----------
+#include <stdio.h>
+int main()
+{
+    int testInt;
+    printf("Enter an integer: ");
+    scanf("%d", &testInt);  
+    printf("Number = %d", testInt);
+    printf("Square of %d = %d", testInt, testInt*testInt)
+    return 0;
+}
+
+// Kết quả:
+// Enter an interger: 9
+// Number = 9
+// Square of 9 = 81
+____________________________________________
+
+gets() lấy dữ liệu nhập vào kể cả khoảng trắng, nó dừng lại khi gặp kí tự xuống dòng(enter)   
+puts() được sử dụng để in chuỗi ra màn hình.  
+                      
+VD sử dụng gets() và puts()                                                               
+---------
+#include<stdio.h>
+
+int main() {
+    char name[50];
+    printf("Enter your name: ");
+    gets(name);
+    printf("Your name is: ");
+    puts(name);
+    return 0;
+
+// Kết quả:
+// Enter your name: Trinh Cao Cuong
+// Your name is: Trinh Cao Cuong
+____________________________________________
 `
 ],
     href: '/learn/c',
