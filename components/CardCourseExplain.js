@@ -37,7 +37,7 @@ const CardCourseExplain = ({ title, data, href }) => {
           <div className="w-full rounded-md border border-indigo-600 border-opacity-60 bg-violet-50 p-5 shadow-lg shadow-indigo-500/50 dark:border-gray-700">
             {data.map((a) => {
               // eslint-disable-next-line react/jsx-key
-              return <pre className="max-h-[32rem] dark:text-lime-900 overflow-auto snap-y snap-mandatory">{a}</pre>
+              return <pre className="max-h-[40rem] text-xs md:text-base dark:text-lime-900 overflow-auto snap-y snap-mandatory">{a}</pre>
             })}
           </div>
         </nav>
