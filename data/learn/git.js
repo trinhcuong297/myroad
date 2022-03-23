@@ -1,6 +1,6 @@
 const cdata = [
     {
-      title: `Git`,
+      title: `Về Git`,
       data: [
   `
   Git là hệ thống kiểm soát phiên bản phân tán mà nguồn mở ( Open Source Distributed Version Control System). 
@@ -201,7 +201,7 @@ $ git branch
 $ git branch <branch_name>
 
 //để xóa 1 nhánh:
-git checkout <branch_name>
+git branch -d <branch_name>
 ---------------
 `
         ],
