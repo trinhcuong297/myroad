@@ -8,7 +8,7 @@ import formatDate from '@/lib/utils/formatDate'
 import NewsletterForm from '@/components/NewsletterForm'
 import Card from '@/components/Card'
 import CardXemThem from '@/components/CardXemThem'
-import projectsData from '@/data/projectsData'
+import learnData from '@/data/learnData'
 
 const MAX_DISPLAY = 5
 
@@ -34,16 +34,30 @@ export default function Home({ posts }) {
       </div>
       <div className="container py-12">
         <div className="-m-4 flex flex-wrap">
-          {projectsData.map((d) => (
-            <Card
-              key={d.title}
-              title={d.title}
-              description={d.description}
-              imgSrc={d.imgSrc}
-              href={d.href}
-              height={``}
-            />
-          ))}
+          <Card
+            key={learnData[0].title}
+            title={learnData[0].title}
+            description={learnData[0].description}
+            imgSrc={learnData[0].imgSrc}
+            href={learnData[0].href}
+            height={``}
+          />
+          <Card
+            key={learnData[1].title}
+            title={learnData[1].title}
+            description={learnData[1].description}
+            imgSrc={learnData[1].imgSrc}
+            href={learnData[1].href}
+            height={``}
+          />
+          <Card
+            key={learnData[2].title}
+            title={learnData[2].title}
+            description={learnData[2].description}
+            imgSrc={learnData[2].imgSrc}
+            href={learnData[2].href}
+            height={``}
+          />
           <CardXemThem
             key={` `}
             title={` `}
