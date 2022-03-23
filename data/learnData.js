@@ -17,6 +17,12 @@ const projectsData = [
     imgSrc: '/static/images/bgHC.svg',
     href: '/learn/python',
   },
+  {
+    title: 'Git',
+    description: `Git là phần mềm quản lí mã nguồn nổi tiếng nhất dùng để quản lí source code, phiên bản,.. - Một trong những kĩ năng thiết yếu của ae coder.`,
+    imgSrc: '/static/images/bgHC.svg',
+    href: '/learn/git',
+  },
 ]
 
 export default projectsData

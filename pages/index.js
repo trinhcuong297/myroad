@@ -8,7 +8,7 @@ import formatDate from '@/lib/utils/formatDate'
 import NewsletterForm from '@/components/NewsletterForm'
 import Card from '@/components/Card'
 import CardXemThem from '@/components/CardXemThem'
-import projectsData from '@/data/projectsData'
+import learnData from '@/data/learnData'
 
 const MAX_DISPLAY = 5
 
@@ -34,7 +34,7 @@ export default function Home({ posts }) {
       </div>
       <div className="container py-12">
         <div className="-m-4 flex flex-wrap">
-          {projectsData.map((d) => (
+          {learnData.map((d) => (
             <Card
               key={d.title}
               title={d.title}
