@@ -123,6 +123,76 @@ time.h trong C: định nghĩa 4 kiểu biến, hai macro và các hàm đa dạ
 ],
     href: '/learn/c',
   },
+  {
+    title: `Comment`,
+    data: [
+`
+   Những phần code bị comment sẽ ko chạy.
+   2 loại comment:
+   //       : comment 1 dòng
+   /*...*/  : comment nhiều dòng
+`
+],
+    href: '/learn/c',
+  },
+  {
+    title: `Toán tử`,
+    data: [
+`
+Có 5 loại toán tử cơ bản trong C là
+1- toán tử số học    (cộng trừ nhân chia)
+2- toán tử tăng giảm (-- và ++)
+3- toán tử gán       (gán giá trị cho 1 biến)
+4- toán tử quan hệ 
+5- toán tử logic
+___________________________________________
+
+1) Toán tử số học:
+      Định nghĩa                     VD
+  + : Cộng số học                  4 + 6 = 10
+  - : Trừ số học                   4 - 6 = -2
+  * : Nhân số học                  4 * 6 = 24
+  / : Chia số học                  6 / 4 = 1   (6.0 / 4.0 = 1.5)
+  % : Chia lấy dư                  6 % 4 = 2
+
+2) Toán tử tăng giảm
+  ++ : cộng 1 vào toán hạng         ++a: cộng 1 vào a trước rồi lấy giá trị
+                                    a++: lấy giá trị a trước rồi cộng 1 vào a
+
+  -- : trừ 1 từ toán hạng           --a: trừ 1 từ a trước rồi lấy giá trị
+                                    a--: lấy giá trị a trước rồi trừ a đi 1
+
+3) Toán tử gán:
+              Cách viết              Giá trị thể hiện                                 
+  =             a = b                  a = b                  
+  +=            a += b                 a = a+b                    
+  -=            a -= b                 a = a-b                    
+  *=            a *= b                 a = a*b                    
+  /=            a /= b                 a = a/b                    
+  %=            a %= b                 a = a%b                    
+                                                   
+4) Toán tử quan hệ:  Là toán tử so sánh giá trị của 2 toán hạng, đúng trả về 1, sai trả về 0
+
+              Ý nghĩa                     VD                              
+  ==          bằng với                    4==5  (trả về 0)                                
+  !=          không bằng với              4!=5  (trả về 1)                                   
+  >           lớn hơn                     4>5   (trả về 0)                            
+  <           nhỏ hơn                     4<5   (trả về 1)                            
+  >=          lớn hơn hoặc bằng           4>=5  (trả về 0)                          
+  <=          nhỏ hơn hoặc bằng           5<=5  (trả về 1)           
+  
+5) Toán tử logic: Là toán tử trả về kết quả 0 hay 1 phụ thuộc vao mệnh đề đúng hay sai
+
+         Ý nghĩa                                 VD                              
+  &&     và (đúng khi cả 2 mệnh đề cùng đúng)    (4==4)&&(4==5)  (trả về 0)                                
+  ||     hoặc (đúng khi 1 trong 2 mệnh đề đúng)  (4==4)&&(4==5)  (trả về 0)                                 
+  !      logic không (trả về phủ định)           !(1==2)         (trả về 1)      
+
+`
+],
+    href: '/learn/c',
+  },
+  
 ]
 
 export default cdata
