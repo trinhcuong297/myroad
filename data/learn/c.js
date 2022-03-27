@@ -192,7 +192,67 @@ ___________________________________________
 ],
     href: '/learn/c',
   },
+  {
+    title: `Mảng`,
+    data: [
+`
+Mảng được hiểu đơn giản là một tập hợp các biến.
+Các phần tử của mảng được truy xuất bằng toán tử []. Ví dụ:
+    a[0] tương đương với phần tử thứ nhất.
+    a[1] tương đương với phần tử thứ hai.
   
+Có thể khai báo và khởi tạo giá trị cho mảng bằng 1 số cách dưới đây:
+    // Khai báo mảng a 5 phần tử với giá trị từ 1 tới 5
+    int a[5] = {1, 2, 3, 4, 5};
+    // Khai báo mảng a 5 phần tử với giá trị từ 1 tới 5
+    int a[] = { 1, 2, 3, 4, 5 };
+    // Khai báo mảng a 20 phần tử và gán giá trị cho 5 phần tử đầu tiên
+    int a[20] = { 1, 2, 3, 4, 5 };
+    // Tạo ra mảng có n phần tử:
+    int a[n];
+
+`
+],
+    href: '/learn/c',
+  },
+  {
+    title: `Mảng 2 chiều`,
+    data: [
+`
+Mảng 2 chiều hay còn được gọi là ma trận là một mảng các mảng 1 chiều.
+Mảng 2 chiều giống như một cái bảng, mảng 1 chiều là các dòng trong bảng và các phần tử của mảng là các ô.
+
+Khai báo mảng 2 chiều với 3 hàng và 5 cột:
+    int arr[3][5];
+  
+Ví dụ chương trình nhập vào một mảng 2 chiều và in mảng 2 chiều này ra màn hình:
+------------------------------------------------------------------
+#include<stdio.h>
+
+int main() {
+	int arr[100][100];
+	int n, m;
+
+	scanf("%d%d", &n, &m);
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			scanf("%d", &arr[i][j]);
+		}
+	}
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			printf("arr[%d][%d] = %d\\n", i, j, arr[i][j]);
+		}
+	}
+
+	return 0;
+}
+------------------------------------------------------------------
+`
+],
+    href: '/learn/c',
+  },
 ]
 
 export default cdata
