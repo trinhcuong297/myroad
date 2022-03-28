@@ -211,6 +211,27 @@ Có thể khai báo và khởi tạo giá trị cho mảng bằng 1 số cách d
     // Tạo ra mảng có n phần tử:
     int a[n];
 
+Ví dụ chương trình nhập vào một mảng và in mảng này ra màn hình:
+------------------------------------------------------------------
+#include<stdio.h>
+
+int main() {
+  int n;
+  scanf("%d%d", &n);
+
+  int arr[n];
+
+  for (int i = 0; i < n; i++) {
+    scanf("%d", &arr[i]);
+  }
+
+  for (int i = 0; i < n; i++) {
+    printf("arr[%d] = %d ", i, arr[i]);
+  }
+  return 0;
+}
+------------------------------------------------------------------
+
 `
 ],
     href: '/learn/c',
@@ -253,6 +274,69 @@ int main() {
 ],
     href: '/learn/c',
   },
+  {
+    title: `Chuỗi`,
+    data: [
+`
+Xâu bản chất là 1 mảng các ký tự được lưu trữ trên các ô nhớ liên tiếp và kết thúc bằng ký tự '\\0'.
+Bạn có thể khởi tạo giá trị cho xâu giống như cho mảng:
+    char str[] = "abcd";
+    char str[50] = "abcd";
+    char str[] = {'a', 'b', 'c', 'd', '\\0'};
+    char str[5] = {'a', 'b', 'c', 'd', '\\0'};
+
+Để nhập dữ liệu và hiển thị một xâu ra màn hình bạn dùng định dạng %s.
+vd----------------------------------------------------
+  #include<stdio.h>
+
+  int main() {
+    // Khai báo xâu str, xâu str lưu trữ được 99 phần tử
+    char str[100];
+    // Nhập dữ liệu vào xâu str
+    scanf("%s", str);
+    // Hiển thị xâu str ra màn hình
+    printf("%s", str);
+    return 0;
+  }
+------------------------------------------------------
+Lưu ý: Khi nhập dữ liệu cho xâu thì không sử dụng toán tử & trong hàm scanf().
+
+Bạn có thể lấy ra phần tử thứ k trong xâu s bằng s[k - 1];
+`
+],
+href: '/learn/c',
+},
+{
+  title: `Thao tác chuỗi với string.h`,
+  data: [
+    `
+CHÚ Ý:
+Các hàm trong thư viện string.h
+
+  Hàm strlen() hàm lấy chiều dài chuỗi :    int strlen ( const char * str);
+
+  Hàm strcmp() hàm so sánh 2 chuỗi:   int strcmp ( const char * str1, const char * str2 );  
+                                    //trả về 0 nếu giống và 1 nếu khác
+
+  Hàm strcat() hàm nối chuỗi:   char * strcat ( char * chuoi_dich, const char * chuoi_nguon);
+
+  Hàm strcpy() hàm copy chuỗi:   char * strcpy ( char * chuoi_dich, const char * chuoi_nguon);
+
+  Hàm strlwr() Đưa chuỗi về dạng lowercase:  char * strlwr (char * s);
+
+  Hàm strupr() đưa chuỗi về dạng uppercase:  char * strupr (char * s);
+
+  Hàm strrev() hàm đảo ngược chuỗi:  char * strrev (char * s);
+
+  Hàm strchr() Trả về vị trí đầu tiên của ký tự cần tìm:   char * strchr (const char * s, char c);
+
+  Hàm strstr() hàm tìm chuỗi con trong chuỗi:   char * strstr (const char * str, const char * sub);
+
+`
+],
+    href: '/learn/c',
+  },
+
 ]
 
 export default cdata
