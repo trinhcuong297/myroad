@@ -73,7 +73,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           {author.twitter && (
                             <Link
                               href={author.twitter}
-                              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                              className="text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400"
                             >
                               {author.twitter.replace('https://twitter.com/', '@')}
                             </Link>
@@ -96,7 +96,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </div>
               <Comments frontMatter={frontMatter} />
             </div>
-            <footer>
+            <footer className="xl:fixed xl:bottom-0">
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
                 {tags && (
                   <div className="py-4 xl:py-8">
@@ -117,7 +117,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
                           Post trước
                         </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                        <div className="text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
@@ -127,7 +127,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
                           Post sau
                         </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                        <div className="text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
@@ -138,7 +138,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div className="pt-4 xl:pt-8">
                 <Link
                   href="/blog"
-                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                  className="text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400"
                 >
                   &larr; Trở lại blog
                 </Link>

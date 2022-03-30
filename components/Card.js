@@ -22,7 +22,7 @@ const Card = ({ title, description, imgSrc, href, height }) => (
         </div>
         <Link
           href={href}
-          className="pb-4 bg-white dark:bg-gray-900 text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+          className="pb-4 bg-white dark:bg-gray-900 text-base font-medium leading-6 text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400"
           aria-label={`Link to ${title}`}
         >
           Học ngay &rarr;

@@ -2,7 +2,7 @@
 title: Giới thiệu về Blog
 date: '2022-3-30'
 tags: ['c','c++','git','python']
-draft: true
+draft: false
 summary:
 images: []
 ---

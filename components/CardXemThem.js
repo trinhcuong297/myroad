@@ -12,7 +12,7 @@ const CardXemThem = ({ title, description, imgSrc, href, height }) => (
           {href && (
             <Link
               href={href}
-              className="text-xl font-bold leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+              className="text-xl font-bold leading-6 text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400"
               aria-label={`Link to ${title}`}
             >
               Xem thêm &rarr;
