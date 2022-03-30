@@ -21,7 +21,7 @@ const projectsData = [
     title: 'C++',
     description: `C ++ là 1 ngôn ngữ lập trình hướng đối tượng được phát triển dựa trên nền tảng của ngôn ngữ C, được ứng dụng trong các phần mềm, hệ điều hành và cả trình biên dịch.`,
     imgSrc: '/static/images/bgHC.svg',
-    href: '/tags/c++',
+    href: '/tags/cpp',
   },
 ]
 
