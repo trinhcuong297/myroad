@@ -17,3 +17,5 @@ trong này sẽ đc highlight `sum = parseInt(num1) + parseInt(num2)`
 ```
 Trong này là code
 ```
+
+[Next.js built-in i8n routing](https://nextjs.org/docs/advanced-features/i18n-routing)) cách chèn link

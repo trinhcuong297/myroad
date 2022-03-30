@@ -96,12 +96,12 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </div>
               <Comments frontMatter={frontMatter} />
             </div>
-            <footer className="xl:fixed xl:bottom-0 max-w-[19rem]">
+            <footer className="xl:fixed xl:bottom-0 max-w-[18.5rem] mb-4 rounded-md border border-indigo-600 border-opacity-60 shadow-md shadow-indigo-500/50 dark:border-gray-700">
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
                 {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                      Tags
+                      Chủ đề
                     </h2>
                     <div className="flex flex-wrap">
                       {tags.map((tag) => (
@@ -135,7 +135,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
               </div>
-              <div className="pt-4 xl:pt-4 pb-6">
+              <div className="pt-4 xl:pt-4 pb-2">
                 <Link
                   href="/blog"
                   className="text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400"
