@@ -335,8 +335,17 @@ Các hàm trong thư viện string.h
 `
 ],
     href: '/learn/c',
-  },
+},
+{
+  title: `Hàm`,
+  data: [
+    `
+Hàm là 1 đoạn code mà khi gọi hàm
 
+`
+],
+    href: '/learn/c',
+},
 ]
 
 export default cdata

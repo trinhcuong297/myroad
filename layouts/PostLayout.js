@@ -115,7 +115,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     {prev && (
                       <div>
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                          Previous Article
+                          Post trước
                         </h2>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
@@ -125,7 +125,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     {next && (
                       <div>
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                          Next Article
+                          Post sau
                         </h2>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
@@ -140,7 +140,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   href="/blog"
                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                 >
-                  &larr; Back to the blog
+                  &larr; Trở lại blog
                 </Link>
               </div>
             </footer>
