@@ -96,7 +96,9 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </div>
               <Comments frontMatter={frontMatter} />
             </div>
-            <footer className="xl:fixed xl:bottom-0 p-4 xl:w-[18.5rem] mb-4 rounded-md border-[1px] border-indigo-600 border-opacity-60 shadow-md shadow-indigo-500/50 dark:border-gray-700">
+            <footer
+              style={{'boxShadow':'rgb(0 146 255 / 30%) 0px 1px 2px 0px, rgb(94 135 159 / 30%) 0px 2px 6px 2px'}}
+              className="xl:fixed xl:bottom-0 p-4 xl:w-[18.5rem] mb-4 rounded-md border-[1px] border-indigo-600 border-opacity-60 shadow-md shadow-indigo-500/50 dark:border-gray-700">
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
                 {tags && (
                   <div className="py-4 xl:py-8">
