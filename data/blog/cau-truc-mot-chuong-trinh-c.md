@@ -7,7 +7,7 @@ summary: 'Một chương trình C thường được chia thành từng hàm, m�
 images: []
 ---
 
-## Bộ từ vựng của C
+## Bộ kí tự của C
 
 Khi code C, chúng ta chỉ dùng những kí tự dưới đây để viết, không nhiều hơn:
 
@@ -16,7 +16,7 @@ Khi code C, chúng ta chỉ dùng những kí tự dưới đây để viết, k
 | 26 chữ cái Latinh    | A,B,C,..a,b,c,... _(C phân biệt hoa/thường)_ |
 | Các chữ số           | 0,1,2,3,4,5,6,7,8,9                          |
 | Các kí hiệu toán học | + - \* / = < > ( )                           |
-| Các kí tự đặc biệt   | . , : ; [ ] % # $ ' " \_ và dấu cách(space)  |
+| Các kí tự đặc biệt   | . , : ; [ ] % # $ ' " \_ { } space ,...      |
 
 ## Quy tắc đặt tên
 
@@ -26,7 +26,18 @@ Trong lập trình cũng như vậy, để giải quyết 1 bài toán trong l�
 **Tên/Định danh** (_Identifier_) là một dãy kí tự dùng để chỉ một hàm, một biến, một kiểu dữ liệu,... Tên không được trùng với **từ khóa** (_key word_) bên dưới.
 
 Trong C có những **từ khóa** (_key word_) được dùng để gọi hàm hay để khai báo các toán tử, kiểu dữ liệu,.. Những ký tự này chúng ta không được phép dùng để đặt tên cho biến :
-const, enum, signed, struct, typedef, unsigned,...
+(**thường thì những từ khóa này bạn không cần nhớ, nhớ dòng bên trên là được**)
+
+```c
+auto       break      case         char
+const      continue   default      do
+int        long       register     return
+short      signed     sizeof       static
+struct     switch     typeof       union
+unsigned   void       volatile     while
+double     else       enum         extern
+float      for        goto         if
+```
 
 ```C
 //Một số ví dụ về đặt tên trong C:
