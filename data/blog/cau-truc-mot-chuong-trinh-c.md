@@ -1,5 +1,5 @@
 ---
-title: Câu trúc một chương trình C
+title: Cấu trúc một chương trình C
 date: '2022-4-1'
 tags: ['c', 'learn']
 draft: false
@@ -11,10 +11,12 @@ images: []
 
 Khi code C, chúng ta chỉ dùng những kí tự dưới đây để viết, không nhiều hơn:
 
-| 26 chữ cái Latinh | A,B,C,..a,b,c,... _(C phân biệt hoa/thường)_|
-| Các chữ số | 0,1,2,3,4,5,6,7,8,9 |
-| Các kí hiệu toán học| + - \* / = < > ( ) |
-| Các kí tự đặc biệt | . , : ; [ ] % # $ ' " \_ và dấu cách(space) |
+| Các bộ kí tự         | Chi tiết                                     |
+| -------------------- | -------------------------------------------- |
+| 26 chữ cái Latinh    | A,B,C,..a,b,c,... _(C phân biệt hoa/thường)_ |
+| Các chữ số           | 0,1,2,3,4,5,6,7,8,9                          |
+| Các kí hiệu toán học | + - \* / = < > ( )                           |
+| Các kí tự đặc biệt   | . , : ; [ ] % # $ ' " \_ và dấu cách(space)  |
 
 ## Quy tắc đặt tên
 
