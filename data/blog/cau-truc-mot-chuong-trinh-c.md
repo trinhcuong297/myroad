@@ -3,7 +3,7 @@ title: Câu trúc một chương trình C
 date: '2022-4-1'
 tags: ['c', 'learn']
 draft: false
-summary:
+summary: 'Một chương trình C thường được chia thành từng hàm, mỗi hàm đảm nhiệm một nhiệm vụ riêng...'
 images: []
 ---
 

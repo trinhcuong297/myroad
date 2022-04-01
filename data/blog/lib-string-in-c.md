@@ -1,8 +1,8 @@
 ---
 title: Thư viện String.h trong C
 date: '2022-3-30'
-tags: ['c','learn']
-draft: false
+tags: ['c', 'learn']
+draft: true
 summary:
 images: []
 ---

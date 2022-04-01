@@ -1,8 +1,8 @@
 ---
 title: Giới thiệu về Blog
 date: '2022-3-30'
-tags: ['c','cpp','git','python']
-draft: false
+tags: ['c', 'cpp', 'git', 'python']
+draft: true
 summary:
 images: []
 ---
@@ -37,4 +37,3 @@ def fib():
 for index, fibonacci_number in zip(range(10), fib()):
      print('{i:3}: {f:3}'.format(i=index, f=fibonacci_number))
 ```
-

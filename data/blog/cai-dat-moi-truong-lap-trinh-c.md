@@ -3,7 +3,7 @@ title: Cài đặt môi trường lập trình C
 date: '2022-4-1'
 tags: ['c', 'learn']
 draft: false
-summary:
+summary: 'Cài đặt IDE để viết code hoặc dùng IDE online để code'
 images: []
 ---
 
