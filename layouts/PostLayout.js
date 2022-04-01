@@ -97,11 +97,15 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <Comments frontMatter={frontMatter} />
             </div>
             <footer
-              style={{'boxShadow':'rgb(0 146 255 / 30%) 0px 1px 2px 0px, rgb(94 135 159 / 30%) 0px 2px 6px 2px'}}
-              className="xl:fixed xl:bottom-0 p-4 xl:w-[18.5rem] mb-4 rounded-md border-[1px] border-indigo-600 border-opacity-60 shadow-md shadow-indigo-500/50 dark:border-gray-700">
+              style={{
+                boxShadow:
+                  'rgb(0 146 255 / 30%) 0px 1px 2px 0px, rgb(94 135 159 / 30%) 0px 2px 6px 2px',
+              }}
+              className="mb-4 rounded-md border-[1px] border-indigo-600 border-opacity-60 p-4 shadow-md shadow-indigo-500/50 dark:border-gray-700 xl:fixed xl:bottom-0 xl:w-[18.5rem]"
+            >
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
                 {tags && (
-                  <div className="py-4 xl:py-8">
+                  <div className="py-1 xl:pb-4">
                     <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
                       Chủ đề
                     </h2>
@@ -113,7 +117,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
                 {(next || prev) && (
-                  <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
+                  <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-4">
                     {prev && (
                       <div>
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
@@ -137,7 +141,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
               </div>
-              <div className="pt-4 xl:pt-4 pb-2">
+              <div className="pt-4 pb-2 xl:pt-4">
                 <Link
                   href="/blog"
                   className="text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400"
