@@ -140,10 +140,28 @@
 }
 
 html::-webkit-scrollbar {
-  width: 0px;
-  background-color: #ffffff;
+  width: 12px;
 }
-pre::-webkit-scrollbar {
-  width: 0px;
-  background-color: #ffffff;
+
+/* Track */
+html::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  */
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+html::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 0, 0, 0.4);
+}
+
+@media only screen and (min-width: 340px) {
+  #logoname {
+    display: block;
+  }
 }
