@@ -67,7 +67,7 @@ g++ --version
 Nếu ra như dưới đây là ok:
 
 ```cmd
-C:\Users\trinh>g++ --version
+C:\Users\cuong>g++ --version
 g++ (MinGW.org GCC-6.3.0-1) 6.3.0
 Copyright (C) 2016 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
