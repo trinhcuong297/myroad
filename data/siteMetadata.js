@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: 'Blog của Cường',
+  title: 'CCode',
   author: 'Trịnh Cao Cường',
-  headerTitle: 'Blog của Cường',
+  headerTitle: 'CCode',
   description: 'Blog chia sẻ và tổng hợp kiến thức lập trình và IoT',
   language: 'en-us',
   theme: 'system', // system, dark or light

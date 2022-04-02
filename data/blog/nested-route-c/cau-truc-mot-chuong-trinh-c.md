@@ -1,7 +1,7 @@
 ---
 title: Cấu trúc một chương trình C
 date: '2022-4-1'
-tags: ['c', 'learn']
+tags: ['c', 'learnC']
 draft: false
 summary: 'Một chương trình C thường được chia thành từng hàm, mỗi hàm đảm nhiệm một nhiệm vụ riêng...'
 images: []
