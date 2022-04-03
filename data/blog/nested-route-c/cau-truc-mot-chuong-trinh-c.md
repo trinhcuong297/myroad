@@ -18,33 +18,6 @@ Khi code C, chúng ta chỉ dùng những kí tự dưới đây để viết, k
 | Các kí hiệu toán học | + - \* / = < > ( )                           |
 | Các kí tự đặc biệt   | . , : ; [ ] % # $ ' " \_ { } space ,...      |
 
-## Quy tắc đặt tên
-
-Trong toán học, chúng ta thường có khái niệm biến và tham số, thường thì người ta sẽ đặt tên cho biến là x và tham số là m.
-Trong lập trình cũng như vậy, để giải quyết 1 bài toán trong lập trình, chúng ta cũng cần các biến để lưu trữ dữ liệu và chúng ta cần đặt tên cho biến để có thể gọi biến a hay biến b ra dùng.
-
-**Tên/Định danh** (_Identifier_) là một dãy kí tự dùng để chỉ một hàm, một biến, một kiểu dữ liệu,... Tên không được trùng với **từ khóa** (_key word_) bên dưới.
-
-Trong C có những **từ khóa** (_key word_) được dùng để gọi hàm hay để khai báo các toán tử, kiểu dữ liệu,.. Những ký tự này chúng ta không được phép dùng để đặt tên cho biến :
-(**thường thì những từ khóa này bạn không cần nhớ, nhớ dòng bên trên là được**)
-
-```c
-auto       break      case         char
-const      continue   default      do
-int        long       register     return
-short      signed     sizeof       static
-struct     switch     typeof       union
-unsigned   void       volatile     while
-double     else       enum         extern
-float      for        goto         if
-```
-
-```C
-//Một số ví dụ về đặt tên trong C:
-int a; //a là tên biến có kiểu dữ liệu là int (số nguyên)
-void sum(){}; //sum là tên của hàm sum có kiểu dữ liệu trả về là void
-```
-
 ## Cấu trúc chính của 1 chương trình C
 
 ```C
