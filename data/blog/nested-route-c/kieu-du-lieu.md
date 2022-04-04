@@ -26,7 +26,111 @@ images: []
 | `typedef`       |             |                  | là kiểu dữ liệu người dùng tự định nghĩa                                 |
 | `void`          |             |                  | là kiểu dữ liệu xác định không có giá trị nào                            |
 
-_Kỹ hơn về `void` : Hàm trả về không có giá trị, Hàm không có tham số truyền vào, hoặc cả 2, hoặc là con trỏ kiểu void._
+### Kiểu dữ liệu logic
+
+C cũng ngầm định một cách không tường minh **kiểu logic**:
+
+- Sai (`false`): giá trị 0
+- Đúng (`true`) : giá trị khác 0, thường là 1
+
+### enum
+
+`enum` là kiểu dữ liệu do người dùng định nghĩa, được sử dụng chủ yếu **để gán các tên** cho các hằng số, các tên giúp một chương trình dễ đọc và bảo trì.
+
+Từ khóa `enum` được sử dụng để khai báo các kiểu liệt kê mới trong C:<br/>
+`enum <tên enum> {<biến 1> = <giá trị 1> , <biến 2> = <giá trị 2>, <biến 3> = <giá trị 3> , ...}`
+
+```c
+#include<stdio.h>
+
+enum week{Mon = 4, Tue = 3, Wed = 6, Thur = 7, Fri = 2, Sat = 1, Sun = 0};
+
+int main() {
+    printf("Chi so cua Thur la %d", Thur);
+}
+/*Kết quả:
+Chi so cua Thur la 7
+```
+
+Các đặc điểm thú vị cần lưu ý về khởi tạo enum:
+
+1. Hai biến enum có thể có cùng giá trị.
+
+```c
+enum ride { go = 1, stop = 1, left = 0, right = 0};
+```
+
+2. Nếu chúng ta không gán giá trị cho tên enum một cách rõ ràng, trình biên dịch theo mặc định gán giá trị bắt đầu từ 0. Ví dụ, trong chương trình C sau, sunday sẽ nhận giá trị 0, sunday được 1, v.v.
+
+```c
+#include <stdio.h>
+
+enum day {sunday, monday, tuesday, wednesday, thursday, friday, saturday};
+
+int main() {
+    printf("Chi so cua sunday la %d\n",sunday);
+    printf("Chi so cua friday la %d\n", friday);
+    return 0;
+}
+/*Kết quả:
+Chi so cua sunday la 0
+Chi so cua friday la 5
+```
+
+3. Bạn có thể gán giá trị cho một số tên theo bất kỳ thứ tự nào. Tất cả các tên chưa được chỉ định sẽ nhận giá trị là giá trị của tên trước đó cộng với một.
+
+```c
+#include <stdio.h>
+
+enum day {sunday = 1, monday, tuesday = 5, wednesday, thursday = 10, friday, saturday};
+
+int main() {
+    printf("%d %d %d %d %d %d %d", sunday, monday, tuesday, wednesday, thursday, friday, saturday);
+    return 0;
+}
+/*Kết quả:
+1 2 5 6 10 11 12
+```
+
+4. Giá trị được gán cho tên enum phải là một số hằng số nguyên.
+5. Tất cả các hằng số enum phải là duy nhất trong phạm vi của chúng. Ví dụ, chương trình sau bị lỗi trong quá trình biên dịch:
+
+```c
+#include <stdio.h>
+
+//Khai báo trùng 1 hằng số failed:
+enum state  {working, failed};
+enum result {failed, passed};
+
+int main()  {
+    return 0;
+}
+/*Kết quả:
+[Error] redeclaration of enumerator 'failed'
+[Note] previous definition of 'failed' was here
+```
+
+### typedef
+
+Ngoài ra, bạn có thể tự định nghĩa kiểu dữ liệu bằng `typedef`:<br/>
+`typedef <kiểu dữ liệu> <tên biến>`
+
+```c
+//ví dụ:
+#include <stdio.h>
+int main(){
+    typedef int songuyen;    //Định nghĩa songuyen là kiểu dữ liệu int
+    typedef int matran[5][4];    //Định nghĩa matran là kiểu dữ liệu mảng số nguyên 2 chiều 5 x 4
+
+    //sau đó, ta có thể khai báo biến như sau:
+    songuyen a;  //a sẽ có kiểu dữ liệu int
+    matran x;  //x sẽ có kiểu dữ liệu mảng số nguyên 2 chiều 5 x 4, tương tự như khai báo int x[5][4]
+}
+```
+
+### void
+
+Kỹ hơn về `void` : Hàm trả về không có giá trị, Hàm không có tham số truyền vào, hoặc cả 2, hoặc là con trỏ kiểu void.
 
 Tùy theo kích cỡ của số mà chúng ta sẽ quyết định kiểu dữ liệu gì sẽ được sử dụng!<br/>
 Thường sử dụng nhất là kiểu số nguyên `int`, kiểu số thực `double` và kiểu kí tự `char`

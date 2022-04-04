@@ -1,6 +1,6 @@
 ---
 title: Nhập xuất dữ liệu trong lập trình C
-date: '2022-4-3'
+date: '2022-4-4'
 tags: ['c', 'learnC']
 draft: false
 summary: 'Cách nhập xuất dữ liệu trong lập trình C'
