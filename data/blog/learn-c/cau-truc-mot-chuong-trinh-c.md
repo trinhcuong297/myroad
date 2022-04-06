@@ -7,7 +7,12 @@ summary: 'Một chương trình C thường được chia thành từng hàm, m�
 images: []
 ---
 
-## Bộ kí tự của C
+> #### Mục lục
+>
+> - [Bộ kí tự của C](#s1)<br/>
+> - [Cấu trúc chính của 1 chương trình C](#s2)<br/>
+
+## Bộ kí tự của C<h1 id="s1"></h1>
 
 Khi code C, chúng ta chỉ dùng những kí tự dưới đây để viết, không nhiều hơn:
 
@@ -18,7 +23,7 @@ Khi code C, chúng ta chỉ dùng những kí tự dưới đây để viết, k
 | Các kí hiệu toán học | + - \* / = < > ( )                           |
 | Các kí tự đặc biệt   | . , : ; [ ] % # $ ' " \_ { } space ,...      |
 
-## Cấu trúc chính của 1 chương trình C
+## Cấu trúc chính của 1 chương trình C<h1 id="s2"></h1>
 
 ```C
 #include <stdio.h> //Khai báo thư viện sử dụng

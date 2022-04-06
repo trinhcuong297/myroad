@@ -7,7 +7,16 @@ summary: 'Định nghĩa và cách sử dụng biến và hằng trong lập tr�
 images: []
 ---
 
-### Biến và hằng là gì?
+> #### Mục lục
+>
+> - [Biến và hằng là gì?](#s1)<br/>
+> - [Danh sách các hằng số trong C](#s2)<br/>
+>   -- [Hằng số nguyên trong C](#s3)<br/>
+>   -- [Hằng số thực trong C](#s4)<br/>
+>   -- [Hằng ký tự trong C](#s5)<br/>
+>   -- [Hằng chuỗi trong C](#s6)<br/>
+
+### Biến và hằng là gì?<h1 id="s1"></h1>
 
 Trong lập trình, khi muốn lưu một giá trị dữ liệu nào đó, ta cần sử dụng biến hoặc hằng.<br/>
 **Biến (variable)** thực chất là tên của 1 vùng trên bộ nhớ RAM, sử dụng khi ta cần lưu trữ 1 giá trị dữ liệu có thể thay đổi khi chương trình được thực thi.
@@ -85,11 +94,11 @@ main.c:14:6: error: assignment of read-only variable ‘a’
       |      ^
 ```
 
-### Danh sách các hằng số trong C:
+### Danh sách các hằng số trong C:<h1 id="s2"></h1>
 
 Bạn sẽ sử dụng những hằng số này khi khởi tạo giá trị cho hằng số.
 
-#### Hằng số nguyên trong C
+#### Hằng số nguyên trong C<h1 id="s3"></h1>
 
 Giá trị hằng số nguyên có thể là hệ thập phân (decimal), hệ bát phân (octal) hoặc hệ thập lục phân (hexadecimal). Tiền tố (prefix) xác định cơ bản hay cơ số: 0x hay 0X cho kiểu hexadecimal (hệ 16), 0 cho octal (hệ 8), và không có gì là hệ thập phân.
 
@@ -117,7 +126,7 @@ Các ví dụ khác với một vài cách khai báo với kiểu số nguyên:
 30ul       /* unsigned long */
 ```
 
-#### Hằng số thực trong C
+#### Hằng số thực trong C<h1 id="s4"></h1>
 
 Một hằng số thực dấu chấm động có một phần nguyên, một giá trị decimal, phần phân số và phần mũ. Bạn có thể biểu diễn giá trị dấu chấm động trong kiểu thập phân và kiểu phân số.
 
@@ -133,7 +142,7 @@ Ví dụ cho phần dấu chấm động:
 .e55          /* Khong hop le: thieu phan phan so va phan nguyen */
 ```
 
-#### Hằng ký tự trong C
+#### Hằng ký tự trong C<h1 id="s5"></h1>
 
 Phần ký tự được đóng mở trong dấu nháy đơn `'`, ví dụ `x` và có thể được lưu trữ trong một biến đơn giản kiểu char.
 
@@ -141,21 +150,21 @@ Một ký tự có thể là một ký tự thường (ví dụ `x`) hoặc chu�
 
 Có những ký tự cụ thể trong C khi bắt đầu bằng dấu `\` sẽ có ý nghĩa đặc biệt và được dùng để biểu diễn dòng mới `\n`, tab mới `\t`. Dưới đây là danh sách các ký tự đặc biệt:
 
-| Dãy thoát | Ý nghĩa                                    |
-| --------- | ------------------------------------------ |
-| \\        | Ký tự \                                    |
-| \'        | Ký tự '                                    |
-| \"        | Ký tự "                                    |
-| \?        | Ký tự ?                                    |
-| \a        | Tiếng chuông                               |
-| \b        | Backspace                                  |
-| \f        | Form feed                                  |
-| \n        | Dòng mới                                   |
-| \r        | Carriage return                            |
-| \t        | tab ngang                                  |
-| \v        | tab dọc                                    |
-| \ooo      | Số trong cơ số 8 của 1 đến 3 chữ số        |
-| \xhh      | Số thập lục phân của một hoặc nhiều chữ số |
+| Dãy thoát (escape sequence) | Ý nghĩa                                    |
+| --------------------------- | ------------------------------------------ |
+| \\                          | Ký tự \                                    |
+| \'                          | Ký tự '                                    |
+| \"                          | Ký tự "                                    |
+| \?                          | Ký tự ?                                    |
+| \a                          | Tiếng chuông                               |
+| \b                          | Backspace                                  |
+| \f                          | Form feed                                  |
+| \n                          | Dòng mới                                   |
+| \r                          | Carriage return                            |
+| \t                          | tab ngang                                  |
+| \v                          | tab dọc                                    |
+| \ooo                        | Số trong cơ số 8 của 1 đến 3 chữ số        |
+| \xhh                        | Số thập lục phân của một hoặc nhiều chữ số |
 
 Sau đây là ví dụ để chỉ một số ký tự dãy thoát:
 
@@ -171,7 +180,7 @@ int main()
 }
 ```
 
-#### Hằng chuỗi trong C
+#### Hằng chuỗi trong C<h1 id="s6"></h1>
 
 Hằng chuỗi được bao với dấu ngoặc kép "". Một chuỗi bao gồm các ký tự tương tự với hằng ký tự: ký tự thuần, chuỗi thoát và ký tự phổ thông.
 
