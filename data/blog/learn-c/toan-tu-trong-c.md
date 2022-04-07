@@ -1,6 +1,6 @@
 ---
 title: Các toán tử trong lập trình C
-date: '2022-4-4'
+date: '2021-4-4'
 tags: ['c', 'learnC']
 draft: false
 summary: 'Các toán tử có trong C và độ ưu tiên cuẩ từng toán tử'

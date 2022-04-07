@@ -1,6 +1,6 @@
 ---
 title: Một vài quy tắc cần nhớ khi lập trình C
-date: '2022-4-2'
+date: '2021-4-2'
 tags: ['c', 'learnC']
 draft: false
 summary: 'Các quy tắc về viết câu lệnh trên 1 hay nhiều dòng, comment, thư viện, hàm'

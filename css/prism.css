@@ -159,9 +159,36 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(255, 0, 0, 0.4);
 }
+.cusscroll::-webkit-scrollbar {
+  width: 3px;
+  height: 5px;
+}
+
+/* Track */
+.cusscroll::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  */
+  -webkit-border-radius: 10px;
+  border-radius: 1px;
+}
+
+/* Handle */
+.cusscroll::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+.cusscroll::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 0, 0, 0.4);
+}
 
 @media only screen and (min-width: 340px) {
   #logoname {
     display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cusscroll::-webkit-scrollbar {
+    width: 3px;
+    height: 1px;
   }
 }

@@ -1,6 +1,6 @@
 ---
 title: Giới thiệu về ngôn ngữ C
-date: '2022-4-1'
+date: '2021-4-1'
 tags: ['c', 'learnC']
 draft: false
 summary: 'Giới thiệu về ngôn ngữ lâp trình C, ưu nhược điểm của C'

@@ -1,6 +1,6 @@
 ---
 title: Câu lệnh điều kiện và rẽ nhánh trong lập trình C
-date: '2022-4-6'
+date: '2021-4-6'
 tags: ['c', 'learnC']
 draft: false
 summary: 'if...else và switch...case trong C'
@@ -130,7 +130,8 @@ void main(){
 run case 1
 ```
 
-`break` dùng để thoát ra khỏi khối lệnh switch case. Nếu không có `break` thì sau khi tìm thấy case thỏa mãn, chương trình sẽ chạy tiếp lệnh trong các case sau mà không cần kiểm tra.
+`break` dùng để thoát ra khỏi khối lệnh switch case. Nếu không có `break` thì sau khi tìm thấy case thỏa mãn, chương trình sẽ chạy tiếp lệnh trong các case sau mà không cần kiểm tra.<br/>
+`default` sẽ chạy nếu không có case nào thỏa mãn hoặc chạy đến nó.`default` chạy không cần điều kiện.
 
 ```c
 #include <stdio.h>
@@ -143,13 +144,16 @@ void main(){
             printf("run case 2\n");
         case 'c' :
             printf("run case 3\n");
+        default :
+            printf("run default");
     }
 }
 /*Kết quả:
 run case 2
 run case 3
+run default
 ```
 
 #### Kinh nghiệm:
 
-`switch case` rất tiện để kiểm tra theo cách so sánh giá trí điều kiện với giá trị case nhưng lại không thể kiểm tra xem giá trị điều kiện có thuộc miền nào đó hay không nên trong phần lớn các trường hợp, ta vẫn thường sử dụng `if else`
+`switch case` rất tiện để kiểm tra theo cách so sánh giá trị điều kiện với giá trị case nhưng lại không thể kiểm tra xem giá trị điều kiện có thuộc miền nào đó hay không nên trong phần lớn các trường hợp, ta vẫn thường sử dụng `if else`

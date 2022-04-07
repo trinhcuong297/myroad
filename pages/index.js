@@ -6,78 +6,64 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 
 import NewsletterForm from '@/components/NewsletterForm'
-import Card from '@/components/Card'
+import Card from '@/components/Cad'
 import CardXemThem from '@/components/CardXemThem'
 import learnData from '@/data/learnData'
+import { getAllTags } from '@/lib/tags'
+import kebabCase from '@/lib/utils/kebabCase'
 
 const MAX_DISPLAY = 5
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
+  const tags = await getAllTags('blog')
 
-  return { props: { posts } }
+  return { props: { posts, tags } }
 }
 
-export default function Home({ posts }) {
+export default function Home({ posts, tags }) {
+  const sortedTags = Object.keys(tags).sort((a, b) => tags[b] - tags[a])
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="space-y-2 pt-6 pb-4 md:space-y-3">
-        <Link href="/learn">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-indigo-600 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Bài học
-          </h1>
-        </Link>
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          Các bài học tổng hợp về các ngôn ngữ lập trình
-        </p>
-      </div>
-      <div className="container py-12">
-        <div className="-m-4 flex flex-wrap">
-          <Card
-            key={learnData[0].title}
-            title={learnData[0].title}
-            description={learnData[0].description}
-            imgSrc={learnData[0].imgSrc}
-            href={learnData[0].href}
-            height={``}
-          />
-          <Card
-            key={learnData[1].title}
-            title={learnData[1].title}
-            description={learnData[1].description}
-            imgSrc={learnData[1].imgSrc}
-            href={learnData[1].href}
-            height={``}
-          />
-          <Card
-            key={learnData[2].title}
-            title={learnData[2].title}
-            description={learnData[2].description}
-            imgSrc={learnData[2].imgSrc}
-            href={learnData[2].href}
-            height={``}
-          />
-          <CardXemThem
-            key={` `}
-            title={` `}
-            description={` `}
-            imgSrc={` `}
-            href={`/learn`}
-            height={``}
-          />
-        </div>
-      </div>
+      {/* <div className="space-y-2 pt-6 pb-4 md:space-y-3">
+      </div> */}
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <Link href="/blog">
             <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-cyan-600 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-              Cập nhật
+              Bài viết mới nhất
             </h1>
           </Link>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
+          {/* <div className="container">
+            <div className="-m-4 flex flex-wrap">
+              <Card key={learnData[0].title} title={learnData[0].title} href={learnData[0].href} />
+              <Card key={learnData[1].title} title={learnData[1].title} href={learnData[1].href} />
+              <Card key={learnData[2].title} title={learnData[2].title} href={learnData[2].href} />
+            </div>
+          </div> */}
+        </div>
+        <div className="cusscroll flex w-full snap-y snap-mandatory overflow-auto overflow-y-hidden">
+          {Object.keys(tags).length === 0 && 'No tags found.'}
+          {sortedTags.map((t) => {
+            return (
+              <Link
+                key={t}
+                href={`/tags/${kebabCase(t)}`}
+                className="-ml-2 flex text-sm font-semibold text-gray-600 dark:text-gray-300"
+              >
+                <Card
+                  key={learnData[0].title}
+                  title={t}
+                  href={learnData[0].href}
+                  more={` (${tags[t]})`}
+                />
+              </Link>
+            )
+          })}
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}

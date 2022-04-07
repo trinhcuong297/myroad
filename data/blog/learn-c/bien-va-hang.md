@@ -1,6 +1,6 @@
 ---
 title: Biến và hằng trong lập trình C
-date: '2022-4-3'
+date: '2021-4-3'
 tags: ['c', 'learnC']
 draft: false
 summary: 'Định nghĩa và cách sử dụng biến và hằng trong lập trình C'

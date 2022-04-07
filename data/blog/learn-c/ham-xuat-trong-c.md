@@ -1,6 +1,6 @@
 ---
 title: Xuất dữ liệu trong lập trình C
-date: '2022-4-5'
+date: '2021-4-5'
 tags: ['c', 'learnC']
 draft: false
 summary: 'Các hàm xuất dữ liệu printf, fprintf, puts, putchar'

@@ -1,6 +1,6 @@
 ---
 title: Cài đặt môi trường lập trình C
-date: '2022-4-1'
+date: '2021-4-1'
 tags: ['c', 'learnC']
 draft: false
 summary: 'Cài đặt IDE để viết code hoặc dùng IDE online để code'
