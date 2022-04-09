@@ -104,7 +104,7 @@ Gia tri ham printf: 20
 
 ### puts()
 
-`puts()` nằm trong thư viện `<stdio.h>`, có chức năng hiển thị (xuất) một chuỗi ký tự ra màn hình khi chạy chương trình C với cú pháp:
+`puts()` nằm trong thư viện `<cstdio.h>`, có chức năng hiển thị (xuất) một chuỗi ký tự ra màn hình khi chạy chương trình C với cú pháp:
 
 ```c
 puts(str);
