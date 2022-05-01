@@ -92,7 +92,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   {'Discuss on Twitter'}
                 </Link>
                 {` • `}
-                <Link href={`https://www.facebook.com/sharer/sharer.php?u=${location.href}`}>
+                <Link href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}>
                   {'Share on Facebook'}
                 </Link>
               </div>
