@@ -7,6 +7,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import { useRouter } from 'next/router'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -18,6 +19,7 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, tags } = frontMatter
+  const { asPath, pathname } = useRouter()
 
   return (
     <SectionContainer>
@@ -92,7 +94,9 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   {'Discuss on Twitter'}
                 </Link>
                 {` • `}
-                <Link href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}>
+                <Link
+                  href={`https://www.facebook.com/sharer/sharer.php?u=https://ccode.vercel.app${asPath}`}
+                >
                   {'Share on Facebook'}
                 </Link>
               </div>
