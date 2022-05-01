@@ -92,7 +92,9 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   {'Discuss on Twitter'}
                 </Link>
                 {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+                <Link href={`https://www.facebook.com/sharer/sharer.php?u=${location.href}`}>
+                  {'Share on Facebook'}
+                </Link>
               </div>
               <Comments frontMatter={frontMatter} />
             </div>

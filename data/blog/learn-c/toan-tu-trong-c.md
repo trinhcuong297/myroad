@@ -14,6 +14,7 @@ images: []
 > - [Toán tử logic](#s3)<br/>
 > - [Toán tử bitwise](#s4)<br/>
 > - [Toán tử gán](#s5)<br/>
+> - [Toán tử khác](#s6)<br/>
 
 <h1 id="s1"></h1>
 
@@ -76,3 +77,16 @@ a = 10 / 5;
 b = c = 20;   // có thể gán giá trị bằng 20 cho đồng thời cả b và c
 a = (b = 10)*(c = 20);  //=200 (biểu thức gán cũng có giá trị, biểu thức gán 10 cho b có giá trị bằng 10, biểu thức gán 20 cho c có giá trị bằng 20)
 ```
+
+| Toán tử | Ý nghĩa                                                                               | Kiểu dữ liệu  | Ví dụ<br/>int a = 3; float b = 7.5             |
+| ------- | ------------------------------------------------------------------------------------- | ------------- | ---------------------------------------------- |
+| `=`     | Gán giá trị                                                                           | Số, biểu thức | `a = b` (gán giá trị bằng b cho a)             |
+| `+=`    | Gán giá trị `a += b` ~ `a = a+b` <br/>(Nói cách khác, tăng giá trị của a thêm b)      | Số, biểu thức | `a+=3` (trả về a=6)                            |
+| `-=`    | Gán giá trị `a -= b` ~ `a = a-b` <br/>(Nói cách khác, giảm giá trị của a đi b)        | Số, biểu thức | `a -= 1` (trả về a=2)                          |
+| `*=`    | Gán giá trị `a *= b` ~ `a = a*b` <br/>(Nói cách khác,a bằng a nhân với b)             | Số, biểu thức | `a *= 3` (trả về a=9)                          |
+| `/=`    | Gán giá trị `a /= b` ~ `a = a/b` <br/>(Nói cách khác,a bằng a chia với b)             | Số, biểu thức | `a /= 2` (trả về a=1); `b /= 3` (trả về b=2.5) |
+| `%=`    | Gán giá trị `a %= b` ~ `a = a%b` <br/>(Nói cách khác,a bằng phần dư khi a chia cho b) | Số, biểu thức | `a %= 2` (trả về a=1); `b %= 3` (trả về b=1.5) |
+
+<h1 id="s6"></h1>
+
+##
