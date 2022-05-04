@@ -5,8 +5,8 @@ const siteMetadata = {
   description: 'Blog chia sẻ và tổng hợp kiến thức lập trình và IoT',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://ccode.vercel.app',
+  siteRepo: 'https://github.com/trinhcuong297/blogcuacuong',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
