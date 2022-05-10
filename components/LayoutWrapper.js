@@ -44,7 +44,7 @@ const LayoutWrapper = ({ children }) => {
             <MobileNav />
           </div>
         </header>
-        <main className="mx-2 mt-24 px-4 sm:px-4 xl:px-8">{children}</main>
+        <main className="mx-2 mt-24 px-4 sm:px-4 lg:px-8">{children}</main>
         <Footer />
       </div>
     </SectionContainer>
