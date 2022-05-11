@@ -7,6 +7,54 @@ summary: 'Đáp án thực hành tin đại cương trên lab.soict.hust.edu.vn 
 images: []
 ---
 
+```c
+//3.1
+#include <stdio.h>
+int main(){
+    double a,b,c;
+    scanf("%lf %lf %lf",&a,&b,&c);
+    printf("%.6lf",a+b+c);
+    printf("\n%.6lf",(a+b+c)/3);
+    return 0;
+}
+```
+
+```c
+//3.2
+#include <stdio.h>
+int main(){
+    double r,pi=3.14159;
+    scanf("%lf",&r);
+    printf("%.6lf",2*pi*r);
+    printf("\n%.6lf",pi*r*r);
+    return 0;
+}
+```
+
+```c
+//3.3
+#include <stdio.h>
+int main(){
+    double x,y;
+    scanf("%lf %lf",&x,&y);
+    printf("%.6lf",x*x+y*y);
+    printf("\n%.6lf",(x+y)*(x+y));
+    printf("\n%.6lf",(x-y)*(x-y));
+    return 0;
+}
+```
+
+```c
+//3.4
+#include <stdio.h>
+int main(){
+    double x,y,z;
+    scanf("%lf %lf %lf",&x,&y,&z);
+    printf("%.6lf",x*y*(1+0.01*z));
+    return 0;
+}
+```
+
 `3.5`Lập chương trình thực hiện các công việc sau:<br/>
 
 1. Nhập 3 số thực x, y, z bất kì.<br/>
