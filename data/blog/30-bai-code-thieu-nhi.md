@@ -128,13 +128,8 @@ int main(){
 }
 ```
 
-`3.5`Lập chương trình thực hiện các công việc sau:<br/>
-
-1. Nhập 3 số thực x, y, z bất kì.<br/>
-2. Tính giá trị biểu thức:<br/>
-   F=((x+y+z)/(x2+y2+1))−|x−zcos(y)|
-
 ```c
+//3.5
 #include <stdio.h>
 #include <math.h>
 int main(){
@@ -693,5 +688,119 @@ int main(){
     }
     printf("%d",max);
     return 0;
+}
+```
+
+```c
+//6.1
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char s[99],t[99],resstr[30];
+	int restime[30];
+    scanf("%s%s",s,t);
+    int reslen = 0;
+    for(char i = 'a';i<'z'+1;i++){
+    	int hook=0;
+		for(int j=0;j<strlen(s);j++){
+			if(i==s[j]){
+				hook+=1;
+			}
+		}
+		for(int k=0;k<strlen(t);k++){
+			if(i==t[k]){
+				hook+=1;
+			}
+		}
+		if(hook>0){
+			resstr[reslen]=i;
+			restime[reslen]=hook;
+			reslen++;
+		}
+	}
+	printf("%s",resstr);
+	for(int i=0;i<reslen;i++){
+		printf("\n%d",restime[i]);
+	}
+    return 0;
+}
+```
+
+```c
+//6.2 - thuc ra la 6.1 tai vi he thong sai test case
+#include<stdio.h>
+#include<string.h>
+#define MAXLEN 100000
+int main(){
+    char strS[MAXLEN];
+    char strT[MAXLEN];
+    int appear[255];
+    scanf("%s",strS);
+    for(int i=0;i< strlen(strS);i++) appear[(int)strS[i]]++;
+     scanf("%s",strT);
+    for(int i=0;i< strlen(strT);i++) appear[(int)strT[i]]++;
+    for(int i=0;i<255;i++){
+        if(appear[i]>0) printf("%c", (char)i);
+    }
+    printf("\n");
+    for(int i = 0;i<255;i++){
+        if(appear[i]>0) printf("%d \n",appear[i]);
+    }
+    return 0;
+}
+```
+
+```c
+//6.3
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+int main()
+{
+	char str[100];
+	int i, alphabets = 0, digits = 0;
+	fgets(str, 100, stdin);
+	for(i=0; i<strlen(str);i++)
+	{
+		if(isalpha(str[i]))
+			alphabets ++;
+		if(isdigit(str[i]))
+			digits ++;
+	}
+	if(alphabets == digits)
+		printf("%d",0);
+	else if (alphabets > digits)
+		printf("%d",1);
+	else printf("%d",2);
+	return 0;
+}
+```
+
+```c
+//6.4
+#include <stdio.h>
+#include <string.h>
+int ex(int a){
+	int res=1;
+	for(int i=0;i<a;i++){
+		res*=2;
+	}
+	return res;
+}
+int main()
+{
+	char str[100];
+	int num = 0;
+	fgets(str, 100, stdin);
+	for(int i=1; i<strlen(str)-1;i++)
+	{
+		if(str[i]!='0'){
+        	num += ex(strlen(str)-i-2);
+		}
+	}
+	if(str[0]!='0')
+	num -= ex(strlen(str)-0-2);
+	printf("%d",num);
+	return 0;
 }
 ```
