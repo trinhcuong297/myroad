@@ -38,7 +38,7 @@ export default function Home({ posts, tags }) {
               />
             </div>
 
-            <div className="relative flex h-[37rem] bg-white lg:w-full lg:max-w-2xl">
+            <div className="relative flex h-[35rem] bg-white lg:w-full lg:max-w-2xl">
               <svg
                 className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
                 fill="currentColor"
