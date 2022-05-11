@@ -1,7 +1,7 @@
 ---
 name: Trịnh Cao Cường
 avatar: /static/images/avatar.png
-occupation: Autumation Engineering
+occupation: Automation Engineering
 company: Ha Noi University of Science and Technology
 email: trinhcuong297@gmail.com
 twitter: https://twitter.com/Twitter
