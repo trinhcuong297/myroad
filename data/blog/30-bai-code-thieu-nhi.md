@@ -7,6 +7,8 @@ summary: 'Đáp án thực hành tin đại cương trên lab.soict.hust.edu.vn 
 images: []
 ---
 
+Bài tập thực hành tin đại cương từ buổi 2 đến buổi 6 của mình =)
+
 ```c
 //2.1
 #include <stdio.h>
