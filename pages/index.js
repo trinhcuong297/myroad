@@ -28,7 +28,7 @@ export default function Home({ posts, tags }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="">
-        <div className="relative overflow-hidden bg-white">
+        <div className="relative overflow-hidden bg-white dark:bg-gray-900">
           <div className="block">
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
               <img
@@ -38,7 +38,7 @@ export default function Home({ posts, tags }) {
               />
             </div>
 
-            <div className="relative flex h-[35rem] bg-white lg:w-full lg:max-w-2xl">
+            <div className="relative flex h-[35rem] bg-white dark:bg-gray-900 lg:w-full lg:max-w-2xl">
               <svg
                 className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
                 fill="currentColor"
@@ -46,7 +46,16 @@ export default function Home({ posts, tags }) {
                 preserveAspectRatio="none"
                 aria-hidden="true"
               >
-                <polygon points="50,0 100,0 50,100 0,100" />
+                <polygon points="50,0 100,0 50,100 0,100" className="dark:hidden" />
+              </svg>
+              <svg
+                className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
+                fill="#171717"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <polygon points="50,0 100,0 50,100 0,100" className="hidden dark:block" />
               </svg>
 
               <main className="mx-auto flex max-w-7xl items-center justify-items-center px-4 sm:px-6 lg:px-8">
@@ -76,7 +85,7 @@ export default function Home({ posts, tags }) {
                     </svg>
                   </div>
                   <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                    <span className="lg:inline">
+                    <span className="dark:text-[#e0e7ff] lg:inline">
                       Blog về
                       <span className="text-indigo-600 lg:inline"> code</span>
                     </span>
