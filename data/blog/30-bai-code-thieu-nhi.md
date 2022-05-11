@@ -44,10 +44,10 @@ int main(){
     scanf("%f",&a);
     scanf("%f",&b);
     min = a;
-    if(min < b){
+    if(min > b){
         min = b;
     }
-    printf("%f",min);
+    printf("%.2f",min);
     return 0;
 }
 ```
@@ -63,7 +63,7 @@ int main(){
     if(max < b){
         max = b;
     }
-    printf("%f",max);
+    printf("%6.2f",max);
     return 0;
 }
 ```
@@ -72,10 +72,10 @@ int main(){
 //2.5
 #include <stdio.h>
 int main(){
-    double a,b,c;
-    scanf("%lf %lf %lf",&a,&b,&c);
-    printf("%lf",a+b+c);
-    printf("%lf",(a+b+c)/3);
+    int a,b,c;
+    scanf("%d %d %d",&a,&b,&c);
+    printf("%d",a+b+c);
+    printf("\n%f",(a+b+c)/3.0);
     return 0;
 }
 ```
