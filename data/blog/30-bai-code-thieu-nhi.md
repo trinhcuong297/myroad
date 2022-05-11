@@ -8,6 +8,79 @@ images: []
 ---
 
 ```c
+//2.1
+#include <stdio.h>
+int main(){
+    float a,b,tong;
+    scanf("%f",&a);
+    scanf("%f",&b);
+    tong = a + b;
+    printf("%f",tong);
+    return 0;
+}
+```
+
+```c
+//2.2
+#include <stdio.h>
+int main(){
+    float a,b,max;
+    scanf("%f",&a);
+    scanf("%f",&b);
+    max = a;
+    if(max < b){
+        max = b;
+    }
+    printf("%6.2f",max);
+    return 0;
+}
+```
+
+```c
+//2.3
+#include <stdio.h>
+int main(){
+    float a,b,min;
+    scanf("%f",&a);
+    scanf("%f",&b);
+    min = a;
+    if(min < b){
+        min = b;
+    }
+    printf("%f",min);
+    return 0;
+}
+```
+
+```c
+//2.4
+#include <stdio.h>
+int main(){
+    float a,b,max;
+    scanf("%f",&a);
+    scanf("%f",&b);
+    max = a;
+    if(max < b){
+        max = b;
+    }
+    printf("%f",max);
+    return 0;
+}
+```
+
+```c
+//2.5
+#include <stdio.h>
+int main(){
+    double a,b,c;
+    scanf("%lf %lf %lf",&a,&b,&c);
+    printf("%lf",a+b+c);
+    printf("%lf",(a+b+c)/3);
+    return 0;
+}
+```
+
+```c
 //3.1
 #include <stdio.h>
 int main(){
