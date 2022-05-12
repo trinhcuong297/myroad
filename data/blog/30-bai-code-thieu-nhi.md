@@ -9,6 +9,10 @@ images: []
 
 Bài tập thực hành tin đại cương từ buổi 2 đến buổi 6 của mình =)
 
+[Đề bài từ 2.1 đến 6.4](https://www.dropbox.com/s/t7yq7ypx6ucp3ia/T%C3%A0i%20li%E1%BB%87u%20th%E1%BB%B1c%20h%C3%A0nh%20T%C4%90C2022-IT1110-v2-26-42.pdf?dl=0)
+
+Với các bài tập này, chúng ta cần các kiến thức lập trình C cơ bản như [biến và hằng](https://ccode.vercel.app/blog/learn-c/bien-va-hang), [nhập, xuất trong C](https://ccode.vercel.app/blog/learn-c/ham-xuat-trong-c), [câu lệnh rẽ nhánh](https://ccode.vercel.app/blog/learn-c/cau-lenh-dieu-kien-va-re-nhanh), [vòng lặp](), [mảng]() và [chuỗi]() cùng việc sử dụng các thuật toán như so sánh, sắp xếp, tìm kiếm.
+
 ```c
 //2.1
 #include <stdio.h>
