@@ -100,10 +100,15 @@ int main(){
 int main(){
     double r,pi=3.14159;
     scanf("%lf",&r);
+    if(r<=0){
+        printf("ERROR");
+        return 0;
+    }
     printf("%.6lf",2*pi*r);
     printf("\n%.6lf",pi*r*r);
     return 0;
 }
+
 ```
 
 ```c
