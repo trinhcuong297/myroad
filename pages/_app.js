@@ -20,6 +20,10 @@ export default function App({ Component, pageProps }) {
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta
+          name="google-site-verification"
+          content="K_pPeGKApk94IcoK4yBsUlZo2qbRkuDENbxfu6WOVp4"
+        />
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
