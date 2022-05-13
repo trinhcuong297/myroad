@@ -32,7 +32,7 @@ export default function Home({ posts, tags }) {
           <div className="block">
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
               <img
-                className="hidden h-56 w-full rounded-br-[5rem] object-cover sm:h-72 md:block md:h-96 lg:h-full lg:w-full"
+                className="hidden h-56 w-full rounded-br-[5rem] rounded-tl-[5rem] object-cover sm:h-72 md:block md:h-96 lg:h-full lg:w-full"
                 src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
                 alt=""
               />
@@ -58,7 +58,7 @@ export default function Home({ posts, tags }) {
                 <polygon points="50,0 100,0 50,100 0,100" className="hidden dark:block" />
               </svg>
 
-              <main className="mx-auto flex max-w-7xl items-center justify-items-center px-4 sm:px-6 lg:px-8">
+              <main className="mx-auto flex max-w-5xl items-center justify-items-center px-4 sm:px-6 lg:px-8">
                 <div className="sm:text-center lg:text-left">
                   <div className="ml-4">
                     <svg
