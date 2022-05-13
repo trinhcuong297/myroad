@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: 'CodeBlog',
+  title: 'RoadToDev',
   author: 'Trịnh Cao Cường',
-  headerTitle: 'CodeBlog',
+  headerTitle: 'RoadToDev',
   description: 'Blog chia sẻ và tổng hợp kiến thức lập trình và IoT',
   language: 'en-us',
   theme: 'system', // system, dark or light
