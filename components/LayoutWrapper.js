@@ -19,9 +19,12 @@ const LayoutWrapper = ({ children }) => {
                   <Logo />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 font-serif text-2xl text-blue-600" id="logoname">
+                  <h1
+                    className="hidden text-2xl font-extrabold tracking-normal text-gray-900 text-indigo-500 sm:text-3xl md:text-4xl"
+                    id="logoname"
+                  >
                     {siteMetadata.headerTitle}
-                  </div>
+                  </h1>
                 ) : (
                   siteMetadata.headerTitle
                 )}

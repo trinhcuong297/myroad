@@ -125,7 +125,7 @@ export default function Home({ posts, tags }) {
       <div className="mx-2 divide-y divide-gray-200 px-4 dark:divide-gray-700 sm:px-4 lg:px-16">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <Link href="/blog">
-            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-blue-600 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-indigo-600 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Bài viết mới nhất
             </h1>
           </Link>
