@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'MyRoad',
+  title: 'MyRoad - blog cá nhân',
   author: 'Trịnh Cao Cường',
   headerTitle: 'MyRoad',
   description: 'Blog chia sẻ và tổng hợp kiến thức lập trình và IoT',
