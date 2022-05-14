@@ -32,16 +32,26 @@ const LayoutWrapper = ({ children }) => {
             </Link>
           </div>
           <div className="flex items-center text-base leading-5">
-            <div className="hidden sm:block">
-              {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className="p-1 font-medium text-gray-900 hover:text-blue-600 dark:text-gray-100 sm:p-4"
-                >
-                  {link.title}
-                </Link>
-              ))}
+            <div className="hidden items-center sm:flex">
+              {headerNavLinks.map((link, index) =>
+                index == 0 ? (
+                  <Link
+                    key={link.title}
+                    href={link.href}
+                    className="px-1 font-medium text-gray-900 hover:text-blue-600 dark:text-gray-100 sm:px-4"
+                  >
+                    <img src="https://img.icons8.com/fluency/48/000000/search-bar.png" />
+                  </Link>
+                ) : (
+                  <Link
+                    key={link.title}
+                    href={link.href}
+                    className="p-1 font-medium text-gray-900 hover:text-blue-600 dark:text-gray-100 sm:p-4"
+                  >
+                    {link.title}
+                  </Link>
+                )
+              )}
             </div>
             <ThemeSwitch />
             <MobileNav />

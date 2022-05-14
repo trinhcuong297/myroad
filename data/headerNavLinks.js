@@ -1,5 +1,5 @@
 const headerNavLinks = [
-  { href: '/blog', title: 'Blog' },
+  { href: '/blog', title: 'Tìm kiếm' },
   { href: '/tags', title: 'Chủ đề' },
   { href: '/learn', title: 'Học tập' },
   { href: '/about', title: 'About' },
