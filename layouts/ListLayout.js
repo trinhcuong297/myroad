@@ -47,13 +47,13 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             </svg>
           </div>
         </div>
-        <ul>
+        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!filteredBlogPosts.length && 'Không có bài viết nào được tìm thấy.'}
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
-              <li key={slug} className="py-4">
-                <article className="space-y-2 lg:grid lg:grid-cols-4 lg:items-baseline lg:space-y-0">
+              <li key={slug} className="rounded-lg py-8 hover:bg-slate-100">
+                <article className="space-y-2 pl-2 lg:grid lg:grid-cols-4 lg:items-baseline lg:space-y-0">
                   <dl>
                     <dt className="sr-only">Published on</dt>
                     <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">

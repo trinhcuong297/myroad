@@ -11,7 +11,7 @@ const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">
-        <header className="fixed z-10 flex w-full items-center justify-between bg-white py-2 px-3 shadow-lg dark:bg-gray-600">
+        <header className="fixed z-10 flex w-full items-center justify-between bg-white py-2 px-3 shadow-lg dark:bg-gray-800">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
@@ -38,7 +38,7 @@ const LayoutWrapper = ({ children }) => {
                   <Link
                     key={link.title}
                     href={link.href}
-                    className="px-1 font-medium text-gray-900 hover:text-blue-600 dark:text-gray-100 sm:px-4"
+                    className="rounded-lg px-1 font-medium text-gray-900 hover:bg-indigo-100 hover:text-indigo-800 dark:text-gray-100 dark:hover:bg-black sm:px-4"
                   >
                     <img src="https://img.icons8.com/fluency/48/000000/search-bar.png" />
                   </Link>
@@ -46,7 +46,7 @@ const LayoutWrapper = ({ children }) => {
                   <Link
                     key={link.title}
                     href={link.href}
-                    className="p-1 font-medium text-gray-900 hover:text-blue-600 dark:text-gray-100 sm:p-4"
+                    className="rounded-lg p-1 font-medium text-gray-900 hover:bg-indigo-100 hover:text-indigo-800 dark:text-gray-100 dark:hover:bg-black sm:p-4"
                   >
                     {link.title}
                   </Link>

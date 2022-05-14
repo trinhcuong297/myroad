@@ -122,7 +122,7 @@ export default function Home({ posts, tags }) {
           </div>
         </div>
       </div>
-      <div className="mx-2 divide-y divide-gray-200 px-4 dark:divide-gray-700 sm:px-4 lg:px-16">
+      <div className="mx-2 divide-y divide-gray-200 px-2 dark:divide-gray-700 sm:px-4 lg:px-12">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <Link href="/blog">
             <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-indigo-600 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
@@ -132,13 +132,6 @@ export default function Home({ posts, tags }) {
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
-          {/* <div className="container">
-            <div className="-m-4 flex flex-wrap">
-              <Card key={learnData[0].title} title={learnData[0].title} href={learnData[0].href} />
-              <Card key={learnData[1].title} title={learnData[1].title} href={learnData[1].href} />
-              <Card key={learnData[2].title} title={learnData[2].title} href={learnData[2].href} />
-            </div>
-          </div> */}
         </div>
         <div className="cusscroll flex w-full snap-y snap-mandatory overflow-auto overflow-y-hidden">
           {Object.keys(tags).length === 0 && 'No tags found.'}
@@ -164,9 +157,9 @@ export default function Home({ posts, tags }) {
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
-              <li key={slug} className="py-12">
+              <li key={slug} className="rounded-lg py-8 hover:bg-slate-100 md:py-12">
                 <article>
-                  <div className="space-y-2 lg:grid lg:grid-cols-4 lg:items-baseline lg:space-y-0">
+                  <div className="space-y-2 px-1 lg:grid lg:grid-cols-4 lg:items-baseline lg:space-y-0">
                     <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
