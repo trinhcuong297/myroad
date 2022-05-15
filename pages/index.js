@@ -159,7 +159,7 @@ export default function Home({ posts, tags }) {
             return (
               <li
                 key={slug}
-                className="rounded-lg py-8 dark:hover:bg-teal-800 md:py-12 lg:hover:bg-slate-100"
+                className="rounded-lg py-8 dark:hover:bg-neutral-800 md:py-12 lg:hover:bg-slate-100"
               >
                 <article>
                   <div className="space-y-2 px-1 lg:grid lg:grid-cols-4 lg:items-baseline lg:space-y-0">

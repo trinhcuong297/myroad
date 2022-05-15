@@ -54,7 +54,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             return (
               <li
                 key={slug}
-                className="rounded-lg py-8 dark:hover:bg-teal-800 lg:hover:bg-slate-100"
+                className="rounded-lg py-8 dark:hover:bg-neutral-800 lg:hover:bg-slate-100"
               >
                 <article className="space-y-2 pl-2 lg:grid lg:grid-cols-4 lg:items-baseline lg:space-y-0">
                   <dl>
