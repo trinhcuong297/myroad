@@ -24,6 +24,11 @@ export default function App({ Component, pageProps }) {
           name="google-site-verification"
           content="K_pPeGKApk94IcoK4yBsUlZo2qbRkuDENbxfu6WOVp4"
         />
+        <meta description="Chào các bạn, mình là Trịnh Cao Cường - một người thích khám phá thế giới của câu lệnh. Blog này là nơi mình chia sẻ những kiến thức và trải nghiệm của mình." />
+        <meta name="geo.region" content="VN-HN" />
+        <meta name="geo.placename" content="Hanoi" />
+        <meta name="geo.position" content="21.004296;105.843723" />
+        <meta name="ICBM" content="21.004296, 105.843723" />
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
