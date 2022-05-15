@@ -2,7 +2,8 @@ const siteMetadata = {
   title: 'MyRoad - blog cá nhân',
   author: 'Trịnh Cao Cường',
   headerTitle: 'MyRoad',
-  description: 'Blog chia sẻ và tổng hợp kiến thức lập trình và IoT',
+  description:
+    'Chào các bạn, mình là Trịnh Cao Cường - một người thích khám phá thế giới của câu lệnh. Blog này là nơi mình chia sẻ những kiến thức và trải nghiệm của mình.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://myroad.vercel.app',
