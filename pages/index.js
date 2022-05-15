@@ -157,7 +157,10 @@ export default function Home({ posts, tags }) {
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
-              <li key={slug} className="rounded-lg py-8 hover:bg-slate-100 md:py-12">
+              <li
+                key={slug}
+                className="rounded-lg py-8 dark:hover:bg-teal-800 md:py-12 lg:hover:bg-slate-100"
+              >
                 <article>
                   <div className="space-y-2 px-1 lg:grid lg:grid-cols-4 lg:items-baseline lg:space-y-0">
                     <dl>

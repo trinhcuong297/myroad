@@ -7,11 +7,13 @@ summary: 'Đáp án thực hành tin đại cương trên lab.soict.hust.edu.vn 
 images: []
 ---
 
-Bài tập thực hành tin đại cương từ buổi 2 đến buổi 6 của mình =)
+Bài tập thực hành tin đại cương từ buổi 2 đến buổi 6 của mình =) Copy paste là 10 nha nhưng mình recommend các bạn tự làm và tham khảo ý tưởng của mình khi cần. Chúc các bạn học tốt A+ môn này!
 
 [Đề bài từ 2.1 đến 6.4](https://www.dropbox.com/s/t7yq7ypx6ucp3ia/T%C3%A0i%20li%E1%BB%87u%20th%E1%BB%B1c%20h%C3%A0nh%20T%C4%90C2022-IT1110-v2-26-42.pdf?dl=0)
 
-Với các bài tập này, chúng ta cần các kiến thức lập trình C cơ bản như [biến và hằng](https://ccode.vercel.app/blog/learn-c/bien-va-hang), [nhập trong C](https://ccode.vercel.app/blog/learn-c/ham-nhap-trong-c), [xuất trong C](https://ccode.vercel.app/blog/learn-c/ham-xuat-trong-c), [câu lệnh rẽ nhánh](https://ccode.vercel.app/blog/learn-c/cau-lenh-dieu-kien-va-re-nhanh), [vòng lặp](), [mảng]() và [chuỗi]() cùng việc sử dụng các thuật toán như so sánh, sắp xếp, tìm kiếm.
+Với các bài tập này, chúng ta cần các kiến thức lập trình C cơ bản như [biến và hằng](https://myroad.vercel.app/blog/learn-c/bien-va-hang), [kiểu dữ liệu](https://myroad.vercel.app/blog/learn-c/kieu-du-lieu), [toán tử trong C](https://myroad.vercel.app/blog/learn-c/toan-tu-trong-c), [nhập trong C](https://myroad.vercel.app/blog/learn-c/ham-nhap-trong-c), [xuất trong C](https://myroad.vercel.app/blog/learn-c/ham-xuat-trong-c), [câu lệnh rẽ nhánh](https://myroad.vercel.app/blog/learn-c/cau-lenh-dieu-kien-va-re-nhanh), [vòng lặp](), [mảng]() và [chuỗi]() cùng việc sử dụng các thuật toán như so sánh, sắp xếp, tìm kiếm.
+
+Để làm 2.1,2.2,2.3,2.4 bạn cần có các kiến thức: [biến và hằng](https://myroad.vercel.app/blog/learn-c/bien-va-hang), [kiểu dữ liệu](https://myroad.vercel.app/blog/learn-c/kieu-du-lieu), [toán tử trong C](https://myroad.vercel.app/blog/learn-c/toan-tu-trong-c), [nhập trong C](https://myroad.vercel.app/blog/learn-c/ham-nhap-trong-c), [xuất trong C](https://myroad.vercel.app/blog/learn-c/ham-xuat-trong-c),[câu lệnh rẽ nhánh](https://myroad.vercel.app/blog/learn-c/cau-lenh-dieu-kien-va-re-nhanh).
 
 ```c
 //2.1
@@ -37,7 +39,7 @@ int main(){
     if(max < b){
         max = b;
     }
-    printf("%6.2f",max);
+    printf("%6.2f",max); //đọc kỹ trong bài viết 'xuất trong C' để hiểu rõ hơn về %6.2f
     return 0;
 }
 ```
@@ -69,10 +71,12 @@ int main(){
     if(max < b){
         max = b;
     }
-    printf("%6.2f",max);
+    printf("%6.2f",max);  //đọc trong bài viết 'xuất trong C' để hiểu rõ hơn về %6.2f
     return 0;
 }
 ```
+
+Để làm 2.5 bạn cần có các kiến thức: [biến và hằng](https://myroad.vercel.app/blog/learn-c/bien-va-hang), [kiểu dữ liệu](https://myroad.vercel.app/blog/learn-c/kieu-du-lieu), [toán tử trong C](https://myroad.vercel.app/blog/learn-c/toan-tu-trong-c), [nhập trong C](https://myroad.vercel.app/blog/learn-c/ham-nhap-trong-c), [xuất trong C](https://myroad.vercel.app/blog/learn-c/ham-xuat-trong-c).
 
 ```c
 //2.5
@@ -81,10 +85,12 @@ int main(){
     int a,b,c;
     scanf("%d %d %d",&a,&b,&c);
     printf("%d",a+b+c);
-    printf("\n%f",(a+b+c)/3.0);
+    printf("\n%f",(a+b+c)/3.0);   //đọc kỹ bài toán tử để hiểu tại sao không chia cho 3 mà là 3.0
     return 0;
 }
 ```
+
+Để làm 3.1,3.2,3.3,3.4,3.5 bạn cần có các kiến thức: [biến và hằng](https://myroad.vercel.app/blog/learn-c/bien-va-hang), [kiểu dữ liệu](https://myroad.vercel.app/blog/learn-c/kieu-du-lieu), [toán tử trong C](https://myroad.vercel.app/blog/learn-c/toan-tu-trong-c), [nhập trong C](https://myroad.vercel.app/blog/learn-c/ham-nhap-trong-c), [xuất trong C](https://myroad.vercel.app/blog/learn-c/ham-xuat-trong-c),[câu lệnh rẽ nhánh](https://myroad.vercel.app/blog/learn-c/cau-lenh-dieu-kien-va-re-nhanh).
 
 ```c
 //3.1
@@ -106,7 +112,7 @@ int main(){
     scanf("%lf",&r);
     if(r<=0){
         printf("ERROR");
-        return 0;
+        return 0; //khi hàm gặp return sẽ kết thúc hàm và bỏ qua các lệnh tiếp theo (ở đây là hàm main)
     }
     printf("%.6lf",2*pi*r);
     printf("\n%.6lf",pi*r*r);
@@ -152,6 +158,8 @@ int main(){
 }
 ```
 
+Để làm 3.6, bạn cần thêm kiến thức về [vòng lặp](https://myroad.vercel.app/), code mình viết dưới đây có sử dụng thêm khái niệm [hàm(funtion)]().
+
 ```c
 //3.6
 #include <stdio.h>
@@ -174,13 +182,16 @@ int main(){
 
 ```
 
+Từ mục 4 trở đi bạn phải sử dụng toàn bộ những khái niệm đã nói ở trên bao gồm [biến và hằng](https://myroad.vercel.app/blog/learn-c/bien-va-hang), [kiểu dữ liệu](https://myroad.vercel.app/blog/learn-c/kieu-du-lieu), [toán tử trong C](https://myroad.vercel.app/blog/learn-c/toan-tu-trong-c), [nhập trong C](https://myroad.vercel.app/blog/learn-c/ham-nhap-trong-c), [xuất trong C](https://myroad.vercel.app/blog/learn-c/ham-xuat-trong-c), [câu lệnh rẽ nhánh](https://myroad.vercel.app/blog/learn-c/cau-lenh-dieu-kien-va-re-nhanh), [vòng lặp](), [mảng]() và [chuỗi]() cùng việc sử dụng các thuật toán như so sánh, sắp xếp, tìm kiếm.
+
 ```c
 //4.1
 #include <stdio.h>
 
-double ex(int a, int b){
+//hàm ex(a) dưới đây dùng để tính giai thừa của 1 số nguyên n
+double ex(int a){
     double res =1;
-    for(int i=0;i<b;i++ ){
+    for(int i=0;i<a;i++ ){
         res *= a--;
     }
     return res;
@@ -189,11 +200,14 @@ double ex(int a, int b){
 int main(){
     int a,c;
     scanf("%d",&a);
+
+    //xét điều kiện đầu vào của a xem đúng chưa?
     if(a<0||a>=8){
         printf("ERROR");
         return 0;
     }
-    c = ex(a,a);
+
+    c = ex(a);
     printf("%d",c);
     return 0;
 }

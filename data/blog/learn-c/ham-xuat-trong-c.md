@@ -52,7 +52,7 @@ Trong đó:
 
 2. `width`: độ dài tối thiểu của kết quả xuất
 3. `.precision` : độ chính xác khi xuất số thực (số chữ số đằng sau dấu phẩy số thực sau khi làm tròn)
-4. `specifier` là định dạng của chuỗi kết quả. [_xem thêm_](https://ccode.vercel.app/blog/nested-route-c/kieu-du-lieu)
+4. `specifier` là định dạng của chuỗi kết quả. [_xem thêm_](https://myroad.vercel.app/blog/nested-route-c/kieu-du-lieu)
 
 ```c
 printf("abc");                 //abc

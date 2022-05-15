@@ -95,7 +95,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </Link>
                 {` • `}
                 <Link
-                  href={`https://www.facebook.com/sharer/sharer.php?u=https://ccode.vercel.app${asPath}`}
+                  href={`https://www.facebook.com/sharer/sharer.php?u=https://myroad.vercel.app${asPath}`}
                 >
                   {'Share on Facebook'}
                 </Link>

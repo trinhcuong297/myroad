@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'Blog chia sẻ và tổng hợp kiến thức lập trình và IoT',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://ccode.vercel.app',
+  siteUrl: 'https://myroad.vercel.app',
   siteRepo: 'https://github.com/trinhcuong297/blogcuacuong',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
