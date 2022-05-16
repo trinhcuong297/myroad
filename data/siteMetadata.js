@@ -43,7 +43,7 @@ const siteMetadata = {
       // https://giscus.app/
       repo: 'trinhcuong297/blogcuacuong',
       repositoryId: 'R_kgDOHB4z_Q',
-      category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY,
+      category: '[ENTER CATEGORY NAME HERE]',
       categoryId: 'DIC_kwDOHB4z_c4CPIZQ',
       mapping: 'pathname', // supported options: pathname, url, title
       reactions: '1', // Emoji reactions: 1 = enable / 0 = disable
@@ -57,19 +57,19 @@ const siteMetadata = {
       // If the theme option above is set to 'custom`
       // please provide a link below to your custom theme css file.
       // example: https://giscus.app/themes/custom_example.css
-      themeURL: '',
+      themeURL: 'custom',
     },
     utterancesConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section
       // https://utteranc.es/
-      repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO,
-      issueTerm: '', // supported options: pathname, url, title
+      repo: 'trinhcuong297/blogcuacuong',
+      issueTerm: 'pathname', // supported options: pathname, url, title
       label: '', // label (optional): Comment 💬
       // theme example: github-light, github-dark, preferred-color-scheme
       // github-dark-orange, icy-dark, dark-blue, photon-dark, boxy-light
-      theme: '',
+      theme: 'github-light',
       // theme when dark mode
-      darkTheme: '',
+      darkTheme: 'icy-dark',
     },
     disqusConfig: {
       // https://help.disqus.com/en/articles/1717111-what-s-a-shortname
