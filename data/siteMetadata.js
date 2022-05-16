@@ -43,12 +43,12 @@ const siteMetadata = {
       // https://giscus.app/
       repo: 'trinhcuong297/blogcuacuong',
       repositoryId: 'R_kgDOHB4z_Q',
-      category: '[ENTER CATEGORY NAME HERE]',
-      categoryId: 'DIC_kwDOHB4z_c4CPIZQ',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOHB4z_c4CPIZP',
       mapping: 'pathname', // supported options: pathname, url, title
       reactions: '1', // Emoji reactions: 1 = enable / 0 = disable
       // Send discussion metadata periodically to the parent window: 1 = enable / 0 = disable
-      metadata: '0',
+      metadata: '1',
       // theme example: light, dark, dark_dimmed, dark_high_contrast
       // transparent_dark, preferred_color_scheme, custom
       theme: 'light',

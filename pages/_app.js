@@ -29,6 +29,21 @@ export default function App({ Component, pageProps }) {
         <meta name="geo.placename" content="Hanoi" />
         <meta name="geo.position" content="21.004296;105.843723" />
         <meta name="ICBM" content="21.004296, 105.843723" />
+        <script
+          src="https://giscus.app/client.js"
+          data-repo="trinhcuong297/blogcuacuong"
+          data-repo-id="R_kgDOHB4z_Q"
+          data-category="Announcements"
+          data-category-id="DIC_kwDOHB4z_c4CPIZP"
+          data-mapping="pathname"
+          data-reactions-enabled="1"
+          data-emit-metadata="1"
+          data-input-position="bottom"
+          data-theme="light"
+          data-lang="en"
+          crossOrigin="anonymous"
+          async
+        ></script>
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
