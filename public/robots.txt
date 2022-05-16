@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://myroad.vercel.app/feed.xml
+Sitemap: https://myroad.vercel.app/tags/learnc/feed.xml
+Sitemap: https://myroad.vercel.app/tags/c/feed.xml
