@@ -7,6 +7,7 @@ email: trinhcuong297@gmail.com
 twitter: https://twitter.com/Twitter
 linkedin: https://www.linkedin.com/in/c%C6%B0%E1%BB%9Dng-tr%E1%BB%8Bnh-7451b2233/
 github: https://github.com/trinhcuong297
+facebook: 'https://www.facebook.com/profile.php?id=100031175888976'
 ---
 
 Mình là 1 sinh viên ngành Tự động hóa trường ĐH Bách Khoa HN.

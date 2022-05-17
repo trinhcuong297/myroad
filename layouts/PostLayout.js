@@ -8,6 +8,7 @@ import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import { useRouter } from 'next/router'
+import SocialIcon from '@/components/social-icons'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -52,7 +53,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 lg:grid lg:grid-cols-4 lg:gap-x-6 lg:divide-y-0"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
-            <dl className="pt-6 pb-10 lg:border-b lg:border-gray-200 lg:pt-11 lg:dark:border-gray-700">
+            <dl className="pt-6 pb-4 lg:border-b lg:border-gray-200 lg:pt-11 lg:dark:border-gray-700">
               <dt className="sr-only">Authors</dt>
               <dd>
                 <ul className="flex justify-center space-x-8 sm:space-x-12 lg:block lg:space-x-0 lg:space-y-8">
@@ -67,20 +68,28 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           className="h-10 w-10 rounded-full"
                         />
                       )}
-                      <dl className="whitespace-nowrap text-sm font-medium leading-5">
+                      <dl className="text-md whitespace-nowrap font-medium leading-5">
                         <dt className="sr-only">Name</dt>
-                        <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
-                        <dt className="sr-only">Twitter</dt>
+                        <dd className="text-emerald-700 dark:text-gray-100">{author.name}</dd>
+                        {/* <dt className="sr-only">Facebook</dt>
                         <dd>
-                          {author.twitter && (
+                          {author.facebook && (
                             <Link
-                              href={author.twitter}
+                              href={author.facebook}
                               className="text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400"
                             >
-                              {author.twitter.replace('https://twitter.com/', '@')}
+                              Facebook
                             </Link>
                           )}
-                        </dd>
+                        </dd> */}
+                        <div className="flex space-x-3 pt-2">
+                          <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={5} />
+                          <SocialIcon kind="github" href={siteMetadata.github} size={5} />
+                          <SocialIcon kind="facebook" href={siteMetadata.facebook} size={5} />
+                          <SocialIcon kind="youtube" href={siteMetadata.youtube} size={5} />
+                          <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={5} />
+                          <SocialIcon kind="twitter" href={siteMetadata.twitter} size={5} />
+                        </div>
                       </dl>
                     </li>
                   ))}
@@ -89,18 +98,37 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 lg:col-span-3 lg:row-span-2 lg:px-6 lg:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
-                  {'Discuss on Twitter'}
-                </Link>
-                {` • `}
-                <Link
-                  href={`https://www.facebook.com/sharer/sharer.php?u=https://myroad.vercel.app${asPath}`}
-                >
-                  {'Share on Facebook'}
-                </Link>
+              <div className="flex space-x-8 pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
+                <div className="flex space-x-2">
+                  <SocialIcon kind="discord" href={'https://discord.gg/yNhcEWK7Dy'} size={5} />
+
+                  <Link href={discussUrl(slug)} rel="nofollow">
+                    {'Discuss on Discord'}
+                  </Link>
+                </div>
+                <div className="flex space-x-2">
+                  <SocialIcon
+                    kind="facebook"
+                    href={`https://www.facebook.com/sharer/sharer.php?u=https://myroad.vercel.app${asPath}`}
+                    size={5}
+                  />
+                  <Link
+                    href={`https://www.facebook.com/sharer/sharer.php?u=https://myroad.vercel.app${asPath}`}
+                  >
+                    {'Share on Facebook'}
+                  </Link>
+                </div>
+                <div className="flex space-x-2">
+                  <SocialIcon kind="messenger" href={siteMetadata.linkedin} size={5} />
+                  <Link href={`https://www.facebook.com/profile.php?id=100031175888976`}>
+                    {'Contact me via Messenger'}
+                  </Link>
+                </div>
               </div>
-              <Comments frontMatter={frontMatter} />
+              <Comments
+                id={`https://www.facebook.com/profile.php?id=100031175888976`}
+                title={title}
+              />
             </div>
             <footer
               style={{

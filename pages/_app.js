@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
         <meta name="geo.placename" content="Hanoi" />
         <meta name="geo.position" content="21.004296;105.843723" />
         <meta name="ICBM" content="21.004296, 105.843723" />
-        <script
+        {/* <script
           src="https://giscus.app/client.js"
           data-repo="trinhcuong297/blogcuacuong"
           data-repo-id="R_kgDOHB4z_Q"
@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }) {
           data-lang="en"
           crossOrigin="anonymous"
           async
-        ></script>
+        ></script> */}
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
