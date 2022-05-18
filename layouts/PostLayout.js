@@ -70,7 +70,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                       )}
                       <dl className="text-md whitespace-nowrap font-medium leading-5">
                         <dt className="sr-only">Name</dt>
-                        <dd className="text-emerald-700 dark:text-gray-100">{author.name}</dd>
+                        <dd className="text-gray-700 dark:text-gray-100">{author.name}</dd>
                         {/* <dt className="sr-only">Facebook</dt>
                         <dd>
                           {author.facebook && (
@@ -94,17 +94,14 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 lg:col-span-3 lg:row-span-2 lg:px-6 lg:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-              <div
-                id="Share"
-                className="cusscroll flex w-full snap-x snap-mandatory overflow-auto overflow-y-hidden pt-2 pb-2 text-sm text-gray-700 dark:text-gray-300"
-              >
-                <div className="flex w-full w-max items-center space-x-2 rounded-[0.3rem] p-4 hover:bg-gray-200">
+              <div id="Share" className="flex pt-2 pb-2 text-sm text-gray-700 dark:text-gray-300">
+                <div className="flex w-max items-center space-x-2 rounded-[0.3rem] p-4 hover:bg-gray-200">
                   <SocialIcon kind="discord" href={'https://discord.gg/yNhcEWK7Dy'} size={5} />
                   <Link href={'https://discord.gg/yNhcEWK7Dy'} rel="nofollow">
-                    <div className="w-max">Discuss on Discord</div>
+                    <div className="w-max">Discuss</div>
                   </Link>
                 </div>
-                <div className="flex w-full w-max items-center space-x-2 rounded-[0.3rem] p-4 hover:bg-gray-200">
+                <div className="flex w-max items-center space-x-2 rounded-[0.3rem] p-4 hover:bg-gray-200">
                   <SocialIcon
                     kind="facebook"
                     href={`https://www.facebook.com/sharer/sharer.php?u=https://myroad.vercel.app${asPath}`}
@@ -113,17 +110,17 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   <Link
                     href={`https://www.facebook.com/sharer/sharer.php?u=https://myroad.vercel.app${asPath}`}
                   >
-                    <div className="w-max">Share on Facebook</div>
+                    <div className="w-max">Share</div>
                   </Link>
                 </div>
-                <div className="flex w-full w-max items-center space-x-2 rounded-[0.3rem] p-4 hover:bg-gray-200">
+                <div className="flex w-max items-center space-x-2 rounded-[0.3rem] p-4 hover:bg-gray-200">
                   <SocialIcon
                     kind="messenger"
                     href={'https://www.facebook.com/profile.php?id=100031175888976'}
                     size={5}
                   />
                   <Link href={`https://www.facebook.com/profile.php?id=100031175888976`}>
-                    <div className="w-max">Contact me via Messenger</div>
+                    <div className="w-max">Contact</div>
                   </Link>
                 </div>
               </div>
