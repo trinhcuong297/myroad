@@ -98,14 +98,14 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 lg:col-span-3 lg:row-span-2 lg:px-6 lg:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-              <div className="cusscroll flex snap-y snap-mandatory space-x-8 overflow-auto overflow-y-hidden pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <div className="flex space-x-2">
+              <div className="cusscroll flex w-full snap-x snap-mandatory overflow-auto overflow-y-hidden pt-2 pb-2 text-sm text-gray-700 dark:text-gray-300">
+                <div className="flex w-full items-center space-x-2 rounded-[0.3rem] p-4 hover:bg-gray-200">
                   <SocialIcon kind="discord" href={'https://discord.gg/yNhcEWK7Dy'} size={5} />
                   <Link href={'https://discord.gg/yNhcEWK7Dy'} rel="nofollow">
                     {'Discuss on Discord'}
                   </Link>
                 </div>
-                <div className="flex space-x-2">
+                <div className="flex w-full items-center space-x-2 rounded-[0.3rem] p-4 hover:bg-gray-200">
                   <SocialIcon
                     kind="facebook"
                     href={`https://www.facebook.com/sharer/sharer.php?u=https://myroad.vercel.app${asPath}`}
@@ -117,8 +117,12 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     {'Share on Facebook'}
                   </Link>
                 </div>
-                <div className="flex space-x-2">
-                  <SocialIcon kind="messenger" href={siteMetadata.linkedin} size={5} />
+                <div className="flex w-full items-center space-x-2 rounded-[0.3rem] p-4 hover:bg-gray-200">
+                  <SocialIcon
+                    kind="messenger"
+                    href={'https://www.facebook.com/profile.php?id=100031175888976'}
+                    size={5}
+                  />
                   <Link href={`https://www.facebook.com/profile.php?id=100031175888976`}>
                     {'Contact me via Messenger'}
                   </Link>
