@@ -17,6 +17,7 @@ const siteMetadata = {
   facebook: 'https://www.facebook.com/profile.php?id=100031175888976',
   youtube: 'https://youtube.comhttps://www.youtube.com/channel/UCbJhVG6t2ySBqdOmSF4bzqg',
   linkedin: 'https://www.linkedin.com/in/c%C6%B0%E1%BB%9Dng-tr%E1%BB%8Bnh-7451b2233/',
+  discord: 'https://discord.gg/yNhcEWK7Dy',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

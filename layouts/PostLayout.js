@@ -102,7 +102,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 <div className="flex space-x-2">
                   <SocialIcon kind="discord" href={'https://discord.gg/yNhcEWK7Dy'} size={5} />
 
-                  <Link href={discussUrl(slug)} rel="nofollow">
+                  <Link href={'https://discord.gg/yNhcEWK7Dy'} rel="nofollow">
                     {'Discuss on Discord'}
                   </Link>
                 </div>
