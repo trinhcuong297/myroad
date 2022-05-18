@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import smoothscroll from 'smoothscroll-polyfill'
+import SocialIcon from './social-icons'
 
 const ScrollTopAndComment = () => {
   const [show, setShow] = useState(false)
@@ -19,12 +20,10 @@ const ScrollTopAndComment = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
   const handleScrollToComment = () => {
-    document.getElementById('comment').scrollIntoView()
+    document.getElementById('Share').scrollIntoView()
   }
   return (
-    <div
-      className={`fixed right-8 bottom-8 hidden flex-col gap-3 ${show ? 'md:flex' : 'md:hidden'}`}
-    >
+    <div className={`fixed right-2 bottom-8 flex-col gap-3 ${show ? 'flex' : 'hidden'}`}>
       <button
         aria-label="Scroll To Top"
         type="button"

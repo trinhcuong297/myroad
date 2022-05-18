@@ -98,7 +98,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 lg:col-span-3 lg:row-span-2 lg:px-6 lg:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-              <div className="cusscroll flex w-full snap-x snap-mandatory overflow-auto overflow-y-hidden pt-2 pb-2 text-sm text-gray-700 dark:text-gray-300">
+              <div
+                id="Share"
+                className="cusscroll flex w-full snap-x snap-mandatory overflow-auto overflow-y-hidden pt-2 pb-2 text-sm text-gray-700 dark:text-gray-300"
+              >
                 <div className="flex w-full items-center space-x-2 rounded-[0.3rem] p-4 hover:bg-gray-200">
                   <SocialIcon kind="discord" href={'https://discord.gg/yNhcEWK7Dy'} size={5} />
                   <Link href={'https://discord.gg/yNhcEWK7Dy'} rel="nofollow">

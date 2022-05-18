@@ -7,6 +7,8 @@ import Twitter from './twitter.svg'
 import Discord from './discord.svg'
 import Messenger from './messenger.svg'
 
+import Rocket from './rocket.svg'
+
 // Icons taken from: https://simpleicons.org/
 
 const components = {
@@ -18,6 +20,7 @@ const components = {
   twitter: Twitter,
   discord: Discord,
   messenger: Messenger,
+  rocket: Rocket,
 }
 
 const SocialIcon = ({ kind, href, size }) => {
