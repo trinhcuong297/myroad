@@ -101,7 +101,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 <div className="flex w-full w-max items-center space-x-2 rounded-[0.3rem] p-4 hover:bg-gray-200">
                   <SocialIcon kind="discord" href={'https://discord.gg/yNhcEWK7Dy'} size={5} />
                   <Link href={'https://discord.gg/yNhcEWK7Dy'} rel="nofollow">
-                    {'Discuss on Discord'}
+                    <div className="w-max">Discuss on Discord</div>
                   </Link>
                 </div>
                 <div className="flex w-full w-max items-center space-x-2 rounded-[0.3rem] p-4 hover:bg-gray-200">
@@ -113,7 +113,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   <Link
                     href={`https://www.facebook.com/sharer/sharer.php?u=https://myroad.vercel.app${asPath}`}
                   >
-                    {'Share on Facebook'}
+                    <div className="w-max">Share on Facebook</div>
                   </Link>
                 </div>
                 <div className="flex w-full w-max items-center space-x-2 rounded-[0.3rem] p-4 hover:bg-gray-200">
@@ -123,7 +123,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     size={5}
                   />
                   <Link href={`https://www.facebook.com/profile.php?id=100031175888976`}>
-                    {'Contact me via Messenger'}
+                    <div className="w-max">Contact me via Messenger</div>
                   </Link>
                 </div>
               </div>
