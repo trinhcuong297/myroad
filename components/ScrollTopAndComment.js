@@ -23,7 +23,7 @@ const ScrollTopAndComment = () => {
     document.getElementById('Share').scrollIntoView()
   }
   return (
-    <div className={`fixed right-2 bottom-8 flex-col gap-3 ${show ? 'flex' : 'hidden'}`}>
+    <div className={`fixed right-2 bottom-8 hidden flex-col gap-3 ${show ? 'md:flex' : ''}`}>
       <button
         aria-label="Scroll To Top"
         type="button"

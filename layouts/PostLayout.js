@@ -83,12 +83,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           )}
                         </dd> */}
                         <div className="flex space-x-3 pt-2">
-                          <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={5} />
-                          <SocialIcon kind="github" href={siteMetadata.github} size={5} />
                           <SocialIcon kind="facebook" href={siteMetadata.facebook} size={5} />
-                          <SocialIcon kind="youtube" href={siteMetadata.youtube} size={5} />
-                          <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={5} />
-                          <SocialIcon kind="twitter" href={siteMetadata.twitter} size={5} />
+                          <SocialIcon kind="discord" href={siteMetadata.discord} size={5} />
                         </div>
                       </dl>
                     </li>
