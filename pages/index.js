@@ -92,7 +92,8 @@ export default function Home({ posts, tags }) {
                   </h1>
                   <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-lg lg:mx-0">
                     Chào các bạn, mình là Trịnh Cao Cường - một người thích khám phá thế giới của
-                    câu lệnh. Blog này là nơi mình chia sẻ những kiến thức và trải nghiệm của mình.
+                    những dòng code. Blog này là nơi mình chia sẻ những kiến thức và trải nghiệm của
+                    mình.
                     <br />
                     Mong rằng những chia sẻ của mình sẽ hữu ích với mọi người!
                   </p>
