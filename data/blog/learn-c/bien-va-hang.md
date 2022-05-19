@@ -16,7 +16,7 @@ images: []
 >   -- [Hằng ký tự trong C](#s5)<br/>
 >   -- [Hằng chuỗi trong C](#s6)<br/>
 
-### Biến và hằng là gì?<h1 id="s1"></h1>
+### Biến và hằng là gì?<br id="s1"></br>
 
 Trong lập trình, khi muốn lưu một giá trị dữ liệu nào đó, ta cần sử dụng biến hoặc hằng.<br/>
 **Biến (variable)** thực chất là tên của 1 vùng trên bộ nhớ RAM, sử dụng khi ta cần lưu trữ 1 giá trị dữ liệu có thể thay đổi khi chương trình được thực thi.
@@ -94,11 +94,11 @@ main.c:14:6: error: assignment of read-only variable ‘a’
       |      ^
 ```
 
-### Danh sách các hằng số trong C:<h1 id="s2"></h1>
+### Danh sách các hằng số trong C:<br id="s2"></br>
 
 Bạn sẽ sử dụng những hằng số này khi khởi tạo giá trị cho hằng số.
 
-#### Hằng số nguyên trong C<h1 id="s3"></h1>
+#### Hằng số nguyên trong C<br id="s3"></br>
 
 Giá trị hằng số nguyên có thể là hệ thập phân (decimal), hệ bát phân (octal) hoặc hệ thập lục phân (hexadecimal). Tiền tố (prefix) xác định cơ bản hay cơ số: 0x hay 0X cho kiểu hexadecimal (hệ 16), 0 cho octal (hệ 8), và không có gì là hệ thập phân.
 
@@ -126,7 +126,7 @@ Các ví dụ khác với một vài cách khai báo với kiểu số nguyên:
 30ul       /* unsigned long */
 ```
 
-#### Hằng số thực trong C<h1 id="s4"></h1>
+#### Hằng số thực trong C<br id="s4"></br>
 
 Một hằng số thực dấu chấm động có một phần nguyên, một giá trị decimal, phần phân số và phần mũ. Bạn có thể biểu diễn giá trị dấu chấm động trong kiểu thập phân và kiểu phân số.
 
@@ -142,7 +142,7 @@ Ví dụ cho phần dấu chấm động:
 .e55          /* Khong hop le: thieu phan phan so va phan nguyen */
 ```
 
-#### Hằng ký tự trong C<h1 id="s5"></h1>
+#### Hằng ký tự trong C<br id="s5"></br>
 
 Phần ký tự được đóng mở trong dấu nháy đơn `'`, ví dụ `x` và có thể được lưu trữ trong một biến đơn giản kiểu char.
 
@@ -180,7 +180,7 @@ int main()
 }
 ```
 
-#### Hằng chuỗi trong C<h1 id="s6"></h1>
+#### Hằng chuỗi trong C<br id="s6"></br>
 
 Hằng chuỗi được bao với dấu ngoặc kép "". Một chuỗi bao gồm các ký tự tương tự với hằng ký tự: ký tự thuần, chuỗi thoát và ký tự phổ thông.
 

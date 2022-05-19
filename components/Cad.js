@@ -1,7 +1,7 @@
 import Link from './Link'
 
 const Cad = ({ title, href, more }) => (
-  <div className=" w-fit p-4 duration-200 hover:scale-105">
+  <div className=" h-min w-max p-4 duration-200 hover:scale-105">
     <div
       className="
         h-full

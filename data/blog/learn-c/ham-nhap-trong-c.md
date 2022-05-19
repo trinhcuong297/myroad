@@ -145,7 +145,7 @@ int main()
 }
 ```
 
-### getchar(), getch() và getche()<h1 id="s5"></h1>
+### getchar(), getch() và getche()<br id="s5"></br>
 
 `getchar()` cho phép nhận 1 kí tự từ stdin **và trả về kí tự đó**.<br/>
 `getch()` và `getche()` cho phép nhận 1 kí tự trực tiếp từ bộ đệm bàn phím **và trả về kí tự đó**, nếu bộ đệm còn kí tự thì hàm sẽ chạy tiếp còn không thì sẽ tạm dừng chờ khi có kí tự xuất hiện thì hàm nhận ngay kí tự đó. Khác biệt duy nhất của 2 hàm là `getch()` thì không cho hiện kí tự đó còn `getche()` thì hiện nó lên màn hình.
@@ -170,7 +170,7 @@ int main(void) {
 }
 ```
 
-### kbhit()<h1 id="s6"></h1>
+### kbhit()<br id="s6"></br>
 
 `kbhit()` dùng để kiểm tra xem trong bộ đệm bàn phím còn kí tự nào không, nếu rỗng trả về 0, khác rỗng trả về giá trị khác 0.
 
@@ -178,7 +178,7 @@ int main(void) {
 kbhit();
 ```
 
-### fflush()<h1 id="s7"></h1>
+### fflush()<br id="s7"></br>
 
 Đôi khi các kí tự còn lại trong bộ đệm bàn phím sẽ làm trôi mất các hàm như gets(), getch(), .. nên để làm sạch bộ đệm bàn phím ta sử dụng `fflush`.
 

@@ -143,12 +143,7 @@ export default function Home({ posts, tags }) {
                 href={`/tags/${kebabCase(t)}`}
                 className="-ml-2 flex text-sm font-semibold text-gray-600 dark:text-gray-300"
               >
-                <Card
-                  key={learnData[0].title}
-                  title={t}
-                  href={learnData[0].href}
-                  more={` (${tags[t]})`}
-                />
+                <Card title={t} href={''} more={` (${tags[t]})`} />
               </Link>
             )
           })}

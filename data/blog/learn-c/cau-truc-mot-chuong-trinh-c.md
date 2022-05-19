@@ -12,7 +12,7 @@ images: []
 > - [Bộ kí tự của C](#s1)<br/>
 > - [Cấu trúc chính của 1 chương trình C](#s2)<br/>
 
-## Bộ kí tự của C<h1 id="s1"></h1>
+## Bộ kí tự của C<br id="s1"></br>
 
 Khi code C, chúng ta chỉ dùng những kí tự dưới đây để viết, không nhiều hơn:
 
@@ -23,7 +23,7 @@ Khi code C, chúng ta chỉ dùng những kí tự dưới đây để viết, k
 | Các kí hiệu toán học | + - \* / = < > ( )                           |
 | Các kí tự đặc biệt   | . , : ; [ ] % # $ ' " \_ { } space ,...      |
 
-## Cấu trúc chính của 1 chương trình C<h1 id="s2"></h1>
+## Cấu trúc chính của 1 chương trình C<br id="s2"></br>
 
 ```C
 #include <stdio.h> //Khai báo thư viện sử dụng

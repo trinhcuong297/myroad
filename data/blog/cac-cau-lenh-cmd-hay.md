@@ -19,7 +19,7 @@ images: []
 **Cách 2**: Ấn vào ô tìm kiếm bên dưới thanh taskbar và tìm từ khóa `command prompt` hay `cmd` rồi chọn kết quả và ấn `enter`
 ![cmd](https://codelearn.io/Media/Default/Users/T_5FFlower/blog/cmd.png)
 
-<h1 id='s1'></h1>
+<br id='s1'></br>
 
 ## Các lệnh về file: di chuyển, tạo, xóa
 
@@ -119,7 +119,7 @@ Trong Ubuntu thì có rất nhiều cách (dùng touch, vi, nano, gedit, ...), c
 Dùng để xóa một hoặc nhiều file.<br/>
 Cú pháp chung : `del <tên file 1> <tên file 2> <tên file 3> ... <tên file n>`
 
-<h1 id='s2'></h1>
+<br id='s2'></br>
 
 ## Các lệnh về kiểm tra, sửa mạng
 
@@ -165,7 +165,7 @@ Là lệnh reset winsock (Windows Socket API) - một công cụ mà hệ điề
 
 Là lệnh setup lại cấu hình TCP/IP giúp khắc phục nhanh các sự cố mạng do sai cấu hình TCP/IP
 
-<h1 id='s3'></h1>
+<br id='s3'></br>
 
 ## Các lệnh xem thông tin hệ điều hành, tắt máy, ra lệnh điều khiển
 
@@ -200,7 +200,7 @@ Thay đổi thuộc tính của file
 
 #### reg add/delete
 
-Thêm hay xóa trong registry <h1 id='s4'></h1>
+Thêm hay xóa trong registry <br id='s4'></br>
 
 ## Custom cmd
 

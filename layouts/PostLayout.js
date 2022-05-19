@@ -9,6 +9,7 @@ import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import { useRouter } from 'next/router'
 import SocialIcon from '@/components/social-icons'
+import Draggable from 'react-draggable'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>

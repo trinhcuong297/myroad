@@ -40,7 +40,7 @@ const LayoutWrapper = ({ children }) => {
                     href={link.href}
                     className="rounded-lg px-1 font-medium text-gray-900 hover:bg-indigo-100 hover:text-indigo-800 dark:text-gray-100 dark:hover:bg-black sm:px-4"
                   >
-                    <img src="https://img.icons8.com/fluency/48/000000/search-bar.png" />
+                    <img src="https://img.icons8.com/fluency/48/000000/search-bar.png" alt="" />
                   </Link>
                 ) : (
                   <Link

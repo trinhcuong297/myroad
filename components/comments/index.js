@@ -9,11 +9,7 @@ const Comments = (id, title) => {
     title: title,
   }
 
-  return (
-    <div>
-      <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-    </div>
-  )
+  return <div>{/* <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} /> */}</div>
 }
 
 export default Comments
