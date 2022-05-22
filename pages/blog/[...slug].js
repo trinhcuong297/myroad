@@ -20,7 +20,38 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const allPosts = await getAllFilesFrontMatter('blog')
-  const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === params.slug.join('/'))
+  const slugAll = getFiles('blog')
+  var samePost = []
+  slugAll.map((p) => {
+    if (params.slug[0] == p.split('/')[0]) {
+      samePost.push(p.split('/'))
+    }
+  })
+  // console.log(samePost)
+  const postIndex = allPosts.findIndex((post) => {
+    return formatSlug(post.slug) === params.slug.join('/')
+  })
+
+  var samePostDetail = []
+  var samePostIndex = []
+  samePost.map((p) => {
+    let a = p.join('/')
+    let b = allPosts.findIndex((post) => {
+      // console.log(formatSlug(post.slug))
+      // console.log(a.slice(0,-3))
+      return formatSlug(post.slug) == a.slice(0, -3)
+    })
+    samePostIndex.push(b)
+  })
+  for (let i = 0; i < samePostIndex.length; i++) {
+    // Find the minimum element in unsorted array
+    let min_idx = i
+    for (let j = i + 1; j < samePostIndex.length; j++) {
+      if (samePostIndex[j] > samePostIndex[min_idx]) min_idx = j
+    }
+    samePostDetail.push(allPosts[samePostIndex[min_idx]])
+    samePostIndex[min_idx] = samePostIndex[i]
+  }
   const prev = allPosts[postIndex + 1] || null
   const next = allPosts[postIndex - 1] || null
   const post = await getFileBySlug('blog', params.slug.join('/'))
@@ -37,10 +68,10 @@ export async function getStaticProps({ params }) {
     fs.writeFileSync('./public/feed.xml', rss)
   }
 
-  return { props: { post, authorDetails, prev, next } }
+  return { props: { post, authorDetails, prev, next, samePostDetail } }
 }
 
-export default function Blog({ post, authorDetails, prev, next }) {
+export default function Blog({ post, authorDetails, prev, next, samePostDetail }) {
   const { mdxSource, toc, frontMatter } = post
 
   return (
@@ -54,6 +85,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
           authorDetails={authorDetails}
           prev={prev}
           next={next}
+          samePost={samePostDetail}
         />
       ) : (
         <div className="mt-24 text-center">

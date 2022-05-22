@@ -19,7 +19,7 @@ const discussUrl = (slug) =>
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
-export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
+export default function PostLayout({ frontMatter, authorDetails, next, prev, children, samePost }) {
   const { slug, fileName, date, title, tags } = frontMatter
   const { asPath, pathname } = useRouter()
 
@@ -125,6 +125,29 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </Link>
                 </div>
               </div>
+              <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 lg:col-start-1 lg:row-start-2 lg:divide-y">
+                {
+                  <div className="flex justify-between py-4 lg:block lg:space-y-8 lg:py-4">
+                    {prev && (
+                      <div>
+                        <h1 className="text-sm uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                          Bài viết cùng chủ đề
+                        </h1>
+                        {samePost.map((a, index) => {
+                          return (
+                            <div
+                              key={index}
+                              className="py-1 text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400"
+                            >
+                              <Link href={`/blog/${a.slug}`}>{a.title}</Link>
+                            </div>
+                          )
+                        })}
+                      </div>
+                    )}
+                  </div>
+                }
+              </div>
               <Comments
                 id={`https://www.facebook.com/profile.php?id=100031175888976`}
                 title={title}
@@ -135,7 +158,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 boxShadow:
                   'rgb(0 146 255 / 30%) 0px 1px 2px 0px, rgb(94 135 159 / 30%) 0px 2px 6px 2px',
               }}
-              className="mb-4 rounded-md border-[1px] border-indigo-600 border-opacity-60 p-4 shadow-md shadow-indigo-500/50 dark:border-gray-700 lg:fixed lg:bottom-0 lg:w-[18.5rem]"
+              className="mb-4 rounded-md border-[1px] border-indigo-600 border-opacity-60 bg-white p-4 shadow-md shadow-indigo-500/50 dark:border-gray-700 dark:bg-gray-900 lg:fixed lg:bottom-0 lg:w-[18.5rem]"
             >
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 lg:col-start-1 lg:row-start-2 lg:divide-y">
                 {tags && (

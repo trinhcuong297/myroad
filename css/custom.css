@@ -1,3 +1,26 @@
 #1 {
   content: ' ';
 }
+pre {
+  max-height: 85vh;
+}
+pre::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+/* Track */
+pre::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5rem;
+}
+
+/* Handle */
+pre::-webkit-scrollbar-thumb {
+  background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  border-radius: 5rem;
+}
+
+/* Handle on hover */
+pre::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

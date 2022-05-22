@@ -156,9 +156,9 @@ html::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
-html::-webkit-scrollbar-thumb:window-inactive {
+/* html::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(255, 0, 0, 0.4);
-}
+} */
 .cusscroll::-webkit-scrollbar {
   width: 3px;
   height: 5px;
