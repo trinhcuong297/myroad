@@ -5,6 +5,7 @@ tags: ['Thuật toán']
 draft: false
 summary: 'Các thuật toán ví dụ với việc tìm kiếm trong mảng tăng dần như: Linear Search, Binary Search, Jump Search, Interpolation Search, Exponential Search, Ternary Search'
 images: []
+tableOfContents: []
 ---
 
 > #### Mục lục

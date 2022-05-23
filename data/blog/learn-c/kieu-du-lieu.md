@@ -5,18 +5,26 @@ tags: ['c', 'learnC']
 draft: false
 summary: 'Các kiểu dữ liệu trong lập trình C'
 images: []
+tableOfContents: [
+'Các kiểu dữ liệu trong C',
+'Bảng ASCII',
+'Kiểu dữ liệu logic',
+'enum',
+'typedef',
+'void',
+]
 ---
 
 > #### Mục lục
 >
-> - [Các kiểu dữ liệu trong C](#s1)<br/>
-> - [Bảng ASCII](#s2)<br/>
-> - [Kiểu dữ liệu logic](#s3)<br/>
-> - [enum](#s4)<br/>
-> - [typedef](#s5)<br/>
-> - [void](#s6)<br/>
+> - [Các kiểu dữ liệu trong C](#1)<br/>
+> - [Bảng ASCII](#2)<br/>
+> - [Kiểu dữ liệu logic](#3)<br/>
+> - [enum](#4)<br/>
+> - [typedef](#5)<br/>
+> - [void](#6)<br/>
 
-### Trong C có các kiểu dữ liệu sau đây:<br id="s1"></br>
+### Trong C có các kiểu dữ liệu sau đây:<br id="1"></br>
 
 | Type            | Size(bytes) | Format Specifier                  | Phạm vi                                                                  |
 | --------------- | ----------- | --------------------------------- | ------------------------------------------------------------------------ |
@@ -36,18 +44,18 @@ images: []
 | `typedef`       |             |                                   | là kiểu dữ liệu người dùng tự định nghĩa                                 |
 | `void`          |             |                                   | là kiểu dữ liệu xác định không có giá trị nào                            |
 
-### Bảng ASCII<br id="s2"></br>
+### Bảng ASCII<br id="2"></br>
 
 ![Bảng ASCII](https://chiasekinang.com/wp-content/uploads/2020/12/bang-ma-ascii_table.png)
 
-### Kiểu dữ liệu logic<br id="s3"></br>
+### Kiểu dữ liệu logic<br id="3"></br>
 
 C cũng ngầm định một cách không tường minh **kiểu logic**:
 
 - Sai (`false`): giá trị 0
 - Đúng (`true`) : giá trị khác 0, thường là 1
 
-### enum<br id="s4"></br>
+### enum<br id="4"></br>
 
 `enum` là kiểu dữ liệu do người dùng định nghĩa, được sử dụng chủ yếu **để gán các tên** cho các hằng số, các tên giúp một chương trình dễ đọc và bảo trì.
 
@@ -124,7 +132,7 @@ int main()  {
 [Note] previous definition of 'failed' was here
 ```
 
-### typedef<br id="s5"></br>
+### typedef<br id="5"></br>
 
 Ngoài ra, bạn có thể tự định nghĩa kiểu dữ liệu bằng `typedef`:<br/>
 `typedef <kiểu dữ liệu> <tên biến>`
@@ -142,7 +150,7 @@ int main(){
 }
 ```
 
-### void<br id="s6"></br>
+### void<br id="6"></br>
 
 Kỹ hơn về `void` : Hàm trả về không có giá trị, Hàm không có tham số truyền vào, hoặc cả 2, hoặc là con trỏ kiểu void.
 

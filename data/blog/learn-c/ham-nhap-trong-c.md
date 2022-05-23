@@ -5,22 +5,32 @@ tags: ['c', 'learnC']
 draft: false
 summary: 'Các hàm nhập dữ liệu scanf, fprintf, gets, fgets, getchar, getch, getche, kbhit, fflush'
 images: []
+tableOfContents:
+  [
+    'scanf()',
+    'fscanf()',
+    'gets()',
+    'fgets()',
+    'getchar(), getch() và getche()',
+    'kbhit()',
+    'fflush()',
+  ]
 ---
 
 > #### Mục lục
 >
-> - [scanf()](#s1)<br/>
-> - [fscanf()](#s2)<br/>
-> - [gets()](#s3)<br/>
-> - [fgets()](#s4)<br/>
-> - [getchar(), getch() và getche()](#s5)<br/>
-> - [kbhit()](#s6)<br/>
-> - [fflush()](#s7)<br/>
+> - [scanf()](#1)<br/>
+> - [fscanf()](#2)<br/>
+> - [gets()](#3)<br/>
+> - [fgets()](#4)<br/>
+> - [getchar(), getch() và getche()](#5)<br/>
+> - [kbhit()](#6)<br/>
+> - [fflush()](#7)<br/>
 >   Trong C hay trong bất kì ngôn ngữ lập trình nào, chúng ta đều có 2 cách để nhập và xuất dữ liệu:
 
 - Qua phương tiện nhập/xuất chuẩn (Input/Output)
 - Qua các tệp tin
-  Trong ngôn ngữ lập trình C, thư viện chuẩn cung cấp các hàm nhập và xuất và các hàm quản lý những dữ liệu này. Phương tiện nhập chuẩn thường là bàn phím và thư viện xuất chuẩn thường là màn hình (console). Nhập và xuất dữ liệu có thể hướng đến tập tin thay vì trên thiết bị nhập xuất chuẩn<span id="s1"></span>.
+  Trong ngôn ngữ lập trình C, thư viện chuẩn cung cấp các hàm nhập và xuất và các hàm quản lý những dữ liệu này. Phương tiện nhập chuẩn thường là bàn phím và thư viện xuất chuẩn thường là màn hình (console). Nhập và xuất dữ liệu có thể hướng đến tập tin thay vì trên thiết bị nhập xuất chuẩn<span id="1"></span>.
 
 ### scanf()
 
@@ -35,7 +45,7 @@ scanf ( *format, &object1, &object2, … );
 
 Hàm `scanf` thành công trả về 1, thất bại trả về 0.
 
-<span id="s2"></span>
+<span id="2"></span>
 
 ### fscanf()
 
@@ -78,7 +88,7 @@ Doc chuoi 1: |to|
 Doc so nguyen: |3|
 ```
 
-<span id="s3"></span>
+<span id="3"></span>
 
 ### gets()
 
@@ -109,7 +119,7 @@ int main()
 Thử đi rồi biết :>
 ```
 
-<span id="s4"></span>
+<span id="4"></span>
 
 ### fgets()
 
@@ -145,7 +155,7 @@ int main()
 }
 ```
 
-### getchar(), getch() và getche()<br id="s5"></br>
+### getchar(), getch() và getche()<br id="5"></br>
 
 `getchar()` cho phép nhận 1 kí tự từ stdin **và trả về kí tự đó**.<br/>
 `getch()` và `getche()` cho phép nhận 1 kí tự trực tiếp từ bộ đệm bàn phím **và trả về kí tự đó**, nếu bộ đệm còn kí tự thì hàm sẽ chạy tiếp còn không thì sẽ tạm dừng chờ khi có kí tự xuất hiện thì hàm nhận ngay kí tự đó. Khác biệt duy nhất của 2 hàm là `getch()` thì không cho hiện kí tự đó còn `getche()` thì hiện nó lên màn hình.
@@ -170,7 +180,7 @@ int main(void) {
 }
 ```
 
-### kbhit()<br id="s6"></br>
+### kbhit()<br id="6"></br>
 
 `kbhit()` dùng để kiểm tra xem trong bộ đệm bàn phím còn kí tự nào không, nếu rỗng trả về 0, khác rỗng trả về giá trị khác 0.
 
@@ -178,7 +188,7 @@ int main(void) {
 kbhit();
 ```
 
-### fflush()<br id="s7"></br>
+### fflush()<br id="7"></br>
 
 Đôi khi các kí tự còn lại trong bộ đệm bàn phím sẽ làm trôi mất các hàm như gets(), getch(), .. nên để làm sạch bộ đệm bàn phím ta sử dụng `fflush`.
 

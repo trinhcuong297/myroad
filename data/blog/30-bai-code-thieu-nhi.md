@@ -5,6 +5,7 @@ tags: ['c', 'tips']
 draft: false
 summary: 'Đáp án thực hành tin đại cương trên lab.soict.hust.edu.vn 20212'
 images: []
+tableOfContents: []
 ---
 
 Bài tập thực hành tin đại cương từ buổi 2 đến buổi 6 của mình =) Copy paste là 10 nha nhưng mình recommend các bạn tự làm và tham khảo ý tưởng của mình khi cần. Chúc các bạn học tốt A+ môn này!

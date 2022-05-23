@@ -5,18 +5,26 @@ tags: ['c', 'learnC']
 draft: false
 summary: 'Các toán tử có trong C và độ ưu tiên của từng toán tử'
 images: []
+tableOfContents: [
+'Toán tử số học',
+'Toán tử quan hệ',
+'Toán tử logic',
+'Toán tử bitwise',
+'Toán tử gán',
+'Toán tử khác',
+]
 ---
 
 > #### Mục lục
 >
-> - [Toán tử số học](#s1)<br/>
-> - [Toán tử quan hệ](#s2)<br/>
-> - [Toán tử logic](#s3)<br/>
-> - [Toán tử bitwise](#s4)<br/>
-> - [Toán tử gán](#s5)<br/>
-> - [Toán tử khác](#s6)<br/>
+> - [Toán tử số học](#1)<br/>
+> - [Toán tử quan hệ](#2)<br/>
+> - [Toán tử logic](#3)<br/>
+> - [Toán tử bitwise](#4)<br/>
+> - [Toán tử gán](#5)<br/>
+> - [Toán tử khác](#6)<br/>
 
-<br id="s1"></br>
+<br id="1"></br>
 
 ## Toán tử số học
 
@@ -28,7 +36,7 @@ images: []
 | `/`     | Chia         | Kiểu số học <br/> (int, double, long, float,...) | Nếu a,b cùng int thì kết quả ra int: 12 / 5 = 2<br/>Nếu có ít nhất 1 số float thì kết quả ra dạng float: 12 / 5.0 = 2.4 |
 | `%`     | Chia lấy dư  | Số nguyên<br/>(int, short, long,..)              | 12 % 5 =2                                                                                                               |
 
-<br id="s2"></br>
+<br id="2"></br>
 
 ## Toán tử quan hệ
 
@@ -42,7 +50,7 @@ Các toán tử quan hệ `<`,`>`,`<=`,`>=`,`==`,`!=` dùng để so sánh giá 
 |`==` |So sánh bằng|Số, biểu thức|`a == b` (trả về 0); `3 == 3` (trả về 1); `(12+3) == 15` (trả về 1)|
 |`!=` |So sánh khác<br/>(Nếu giá trị a khác b thì trả về 1, giống trả về 0)|Số, biểu thức|`a != b` (trả về 1); `3 != 3` (trả về 0); `(12+3) != 15` (trả về 0)|
 
-<br id="s3"></br>
+<br id="3"></br>
 
 ## Toán tử logic
 
@@ -53,11 +61,11 @@ Các toán tử quan hệ `<`,`>`,`<=`,`>=`,`==`,`!=` dùng để so sánh giá 
 
 `||` Logic Hoặc<br/>Trả về `true hoặc 1` khi có 1 biểu thức đúng<br/>Trả về `false hoặc 0` khi cả hai biểu thức sai<br/> Kiểu dữ liệu: Biểu thức<br/>Ví dụ: `3<5 || 4<5` (trả về 1); `3>5 || 4<5` (trả về 1); `3>5 || 4>5` (trả về 0)
 
-<br id="s4"></br>
+<br id="4"></br>
 
 ## Toán tử logic bit (bitwise)
 
-<br id="s5"></br>
+<br id="5"></br>
 
 ## Toán tử gán
 
@@ -87,6 +95,6 @@ a = (b = 10)*(c = 20);  //=200 (biểu thức gán cũng có giá trị, biểu 
 | `/=`    | Gán giá trị `a /= b` ~ `a = a/b` <br/>(Nói cách khác,a bằng a chia với b)             | Số, biểu thức | `a /= 2` (trả về a=1); `b /= 3` (trả về b=2.5) |
 | `%=`    | Gán giá trị `a %= b` ~ `a = a%b` <br/>(Nói cách khác,a bằng phần dư khi a chia cho b) | Số, biểu thức | `a %= 2` (trả về a=1); `b %= 3` (trả về b=1.5) |
 
-<br id="s6"></br>
+<br id="6"></br>
 
 ##

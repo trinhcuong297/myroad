@@ -5,21 +5,27 @@ tags: ['window', 'tips']
 draft: false
 summary: 'Các câu lệnh thường dùng trên Command Prompt'
 images: []
+tableOfContents: [
+'Các lệnh về file: di chuyển, tạo, xóa'
+,'Các lệnh về kiểm tra, sửa mạng'
+,'Các lệnh xem thông tin hệ điều hành, tắt máy, ra lệnh điều khiển'
+,'Custom cmd'
+]
 ---
 
 > #### Mục lục
 >
-> - [Các lệnh về file: di chuyển, tạo, xóa](#s1)<br/>
-> - [Các lệnh về kiểm tra, sửa mạng](#s2)<br/>
-> - [Các lệnh xem thông tin hệ điều hành, tắt máy, ra lệnh điều khiển](#s3)<br/>
-> - [Custom cmd](#s3)<br/>
+> - [Các lệnh về file: di chuyển, tạo, xóa](#1)<br/>
+> - [Các lệnh về kiểm tra, sửa mạng](#2)<br/>
+> - [Các lệnh xem thông tin hệ điều hành, tắt máy, ra lệnh điều khiển](#3)<br/>
+> - [Custom cmd](#3)<br/>
 
 Đầu tiên để dùng những câu lênh mình giới thiệu tiếp theo đây, bạn phải biết mở cmd lên đã:<br/>
 **Cách 1**: ấn tổ hợp phím `Windows` + `R`, sau đó nhập `cmd` vào và ấn `enter`<br/>
 **Cách 2**: Ấn vào ô tìm kiếm bên dưới thanh taskbar và tìm từ khóa `command prompt` hay `cmd` rồi chọn kết quả và ấn `enter`
 ![cmd](https://codelearn.io/Media/Default/Users/T_5FFlower/blog/cmd.png)
 
-<br id='s1'></br>
+<br id='1'></br>
 
 ## Các lệnh về file: di chuyển, tạo, xóa
 
@@ -119,7 +125,7 @@ Trong Ubuntu thì có rất nhiều cách (dùng touch, vi, nano, gedit, ...), c
 Dùng để xóa một hoặc nhiều file.<br/>
 Cú pháp chung : `del <tên file 1> <tên file 2> <tên file 3> ... <tên file n>`
 
-<br id='s2'></br>
+<br id='2'></br>
 
 ## Các lệnh về kiểm tra, sửa mạng
 
@@ -165,7 +171,7 @@ Là lệnh reset winsock (Windows Socket API) - một công cụ mà hệ điề
 
 Là lệnh setup lại cấu hình TCP/IP giúp khắc phục nhanh các sự cố mạng do sai cấu hình TCP/IP
 
-<br id='s3'></br>
+<br id='3'></br>
 
 ## Các lệnh xem thông tin hệ điều hành, tắt máy, ra lệnh điều khiển
 
@@ -200,7 +206,7 @@ Thay đổi thuộc tính của file
 
 #### reg add/delete
 
-Thêm hay xóa trong registry <br id='s4'></br>
+Thêm hay xóa trong registry <br id='4'></br>
 
 ## Custom cmd
 

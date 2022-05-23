@@ -5,23 +5,30 @@ tags: ['c', 'learnC']
 draft: false
 summary: 'if...else và switch...case trong C'
 images: []
+tableOfContents: [
+'If else',
+'Câu lệnh if',
+'Câu lệnh if ... else',
+'Câu lệnh if ... else lồng nhau',
+'Switch case',
+]
 ---
 
 > #### Mục lục
 >
-> - [If else](#s1)<br/>
->   -- [Câu lệnh if](#s2)<br/>
->   -- [Câu lệnh if ... else](#s3)<br/>
->   -- [Câu lệnh if ... else lồng nhau](#s4)<br/>
-> - [Switch case](#s5)<br/>
+> - [If else](#1)<br/>
+>   -- [Câu lệnh if](#2)<br/>
+>   -- [Câu lệnh if ... else](#3)<br/>
+>   -- [Câu lệnh if ... else lồng nhau](#4)<br/>
+> - [Switch case](#5)<br/>
 
-## If else<br id="s1"></br>
+## If else<br id="1"></br>
 
 Giả sử bạn đang cần làm 1 chương trình: Nếu a=1 thì in ra a, nếu a!=1 thì không. Trong trường hợp này, bạn sẽ cần dùng đến câu lệnh điều kiện `if...else` trong C.
 
 Nguyên tắc của câu lệnh `if...else` là nếu điều kiện đầu vào đúng thì khối lệnh trong `if` sẽ chạy còn nếu điều kiện sai thì khối lệnh trong `else` sẽ chạy.
 
-### Câu lệnh `if`<br id="s2"></br>
+### Câu lệnh `if`<br id="2"></br>
 
 Cho phép chương trình ra quyết định có chạy khối lệnh trong `if` hay không dựa vào việc kiểm tra một điều kiện đầu vào.
 Cách viết:
@@ -61,7 +68,7 @@ a = 1
 Câu này thì khum
 ```
 
-### Câu lệnh `if ... else`<br id="s3"></br>
+### Câu lệnh `if ... else`<br id="3"></br>
 
 Câu lệnh `if` trên sẽ thực thi khối lệnh khi trường hợp đúng, vậy còn sai thì sao?<br/>
 Để chương trình thực thi một khối lệnh khi điều kiện `if` đúng và một khối lệnh khác khi `if` sai, chúng ta dùng câu lệnh điều kiện `if ... else`
@@ -82,7 +89,7 @@ else
     printf("Sai òi");
 ```
 
-### Câu lệnh `if ... else` lồng nhau<br id="s4"></br>
+### Câu lệnh `if ... else` lồng nhau<br id="4"></br>
 
 Được gọi là `if-else-if ladder` hay `if-else-if staircase`, cấu trúc `if else` mở rộng mà `else` sẽ chứa `if else` khác. Các điều kiện sẽ được kiểm tra từ trên xuống dưới, khi thỏa mãn điều kiện `if` nào đó, khối lệnh gắn với nó sẽ được thực thi và các lệnh if else còn lại sẽ được bỏ qua.<br/>
 Nếu không có điều kiện nào `true` thì khối lệnh `else` cuối cùng sẽ được thực hiện, nếu `else` cuối không tồn tại, sẽ không có lệnh nào được thực hiện.
@@ -106,7 +113,7 @@ void main(){
 if 3 được thực thi
 ```
 
-## Switch case<br id="s5"></br>
+## Switch case<br id="5"></br>
 
 Câu lệnh `switch case` sẽ so sánh giá trị `switch` đầu vào với các giá trị `case` cho đến khi tìm được một giá trị `case` trùng với giá trị `switch` đầu vào, khi đó các câu lệnh gắn với nó sẽ được thực hiện.
 

@@ -5,18 +5,22 @@ tags: ['c', 'learnC']
 draft: false
 summary: 'Định nghĩa và cách sử dụng biến và hằng trong lập trình C'
 images: []
+tableOfContents: ['Biến và hằng là gì?]','Danh sách các hằng số trong C','Hằng số nguyên trong C'
+,'Hằng số thực trong C'
+,'Hằng ký tự trong C'
+,'Hằng chuỗi trong C']
 ---
 
 > #### Mục lục
 >
-> - [Biến và hằng là gì?](#s1)<br/>
-> - [Danh sách các hằng số trong C](#s2)<br/>
->   -- [Hằng số nguyên trong C](#s3)<br/>
->   -- [Hằng số thực trong C](#s4)<br/>
->   -- [Hằng ký tự trong C](#s5)<br/>
->   -- [Hằng chuỗi trong C](#s6)<br/>
+> - [Biến và hằng là gì?](#1)<br/>
+> - [Danh sách các hằng số trong C](#2)<br/>
+>   -- [Hằng số nguyên trong C](#3)<br/>
+>   -- [Hằng số thực trong C](#4)<br/>
+>   -- [Hằng ký tự trong C](#5)<br/>
+>   -- [Hằng chuỗi trong C](#6)<br/>
 
-### Biến và hằng là gì?<br id="s1"></br>
+### Biến và hằng là gì?<br id="1"></br>
 
 Trong lập trình, khi muốn lưu một giá trị dữ liệu nào đó, ta cần sử dụng biến hoặc hằng.<br/>
 **Biến (variable)** thực chất là tên của 1 vùng trên bộ nhớ RAM, sử dụng khi ta cần lưu trữ 1 giá trị dữ liệu có thể thay đổi khi chương trình được thực thi.
@@ -94,11 +98,11 @@ main.c:14:6: error: assignment of read-only variable ‘a’
       |      ^
 ```
 
-### Danh sách các hằng số trong C:<br id="s2"></br>
+### Danh sách các hằng số trong C:<br id="2"></br>
 
 Bạn sẽ sử dụng những hằng số này khi khởi tạo giá trị cho hằng số.
 
-#### Hằng số nguyên trong C<br id="s3"></br>
+#### Hằng số nguyên trong C<br id="3"></br>
 
 Giá trị hằng số nguyên có thể là hệ thập phân (decimal), hệ bát phân (octal) hoặc hệ thập lục phân (hexadecimal). Tiền tố (prefix) xác định cơ bản hay cơ số: 0x hay 0X cho kiểu hexadecimal (hệ 16), 0 cho octal (hệ 8), và không có gì là hệ thập phân.
 
@@ -126,7 +130,7 @@ Các ví dụ khác với một vài cách khai báo với kiểu số nguyên:
 30ul       /* unsigned long */
 ```
 
-#### Hằng số thực trong C<br id="s4"></br>
+#### Hằng số thực trong C<br id="4"></br>
 
 Một hằng số thực dấu chấm động có một phần nguyên, một giá trị decimal, phần phân số và phần mũ. Bạn có thể biểu diễn giá trị dấu chấm động trong kiểu thập phân và kiểu phân số.
 
@@ -142,7 +146,7 @@ Ví dụ cho phần dấu chấm động:
 .e55          /* Khong hop le: thieu phan phan so va phan nguyen */
 ```
 
-#### Hằng ký tự trong C<br id="s5"></br>
+#### Hằng ký tự trong C<br id="5"></br>
 
 Phần ký tự được đóng mở trong dấu nháy đơn `'`, ví dụ `x` và có thể được lưu trữ trong một biến đơn giản kiểu char.
 
@@ -180,7 +184,7 @@ int main()
 }
 ```
 
-#### Hằng chuỗi trong C<br id="s6"></br>
+#### Hằng chuỗi trong C<br id="6"></br>
 
 Hằng chuỗi được bao với dấu ngoặc kép "". Một chuỗi bao gồm các ký tự tương tự với hằng ký tự: ký tự thuần, chuỗi thoát và ký tự phổ thông.
 

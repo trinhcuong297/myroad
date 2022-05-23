@@ -5,6 +5,15 @@ tags: ['Thuật toán']
 draft: false
 summary: 'Các thuật toán ví dụ với việc sắp xếp mảng tăng dần như: Selection Sort, Bubble Sort, Insertion Sort, Merge Sort, Heap Sort, QuickSort, Radix Sort, Counting Sort, Bucket Sort, ShellSort, Comb Sort, Pigeonhole Sort, Cycle Sort'
 images: []
+tableOfContents:
+  [
+    'Selection Sort',
+    'Bubble Sort',
+    'Insert Sort',
+    'Merge Sort',
+    'Quick Sort',
+    'Radix Sort, Counting Sort, Bucket Sort, ShellSort, Comb Sort, Pigeonhole Sort, Cycle Sort',
+  ]
 ---
 
 > #### Mục lục

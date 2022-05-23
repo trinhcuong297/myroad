@@ -5,6 +5,7 @@ tags: ['c', 'learnC']
 draft: false
 summary: 'Các quy tắc về viết câu lệnh trên 1 hay nhiều dòng, comment, thư viện, hàm'
 images: []
+tableOfContents: []
 ---
 
 ### Quy tắc 1: Các câu lệnh có thể viết trên nhiều dòng hoặc viết liền 1 dòng nhưng luôn phải được kết thúc bằng dấu `;`

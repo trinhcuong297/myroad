@@ -22,7 +22,6 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children, samePost }) {
   const { slug, fileName, date, title, tags } = frontMatter
   const { asPath, pathname } = useRouter()
-
   return (
     <SectionContainer>
       <BlogSEO
@@ -93,6 +92,35 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </ul>
               </dd>
             </dl>
+            <div
+              style={{
+                boxShadow:
+                  'rgb(0 146 255 / 30%) 0px 1px 2px 0px, rgb(94 135 159 / 30%) 0px 2px 6px 2px',
+              }}
+              className="mb-3 hidden divide-gray-200 rounded-md border-[1px] border-indigo-600 border-opacity-60 bg-white p-4 p-3 text-sm font-medium leading-5 shadow-md shadow-indigo-500/50 dark:divide-gray-700 dark:border-gray-700 dark:bg-gray-900 lg:fixed lg:bottom-0 lg:block lg:w-[18.5rem]"
+            >
+              {
+                <div className="flex justify-between py-4 lg:block lg:space-y-8 lg:py-4 ">
+                  {prev && (
+                    <div>
+                      <h1 className="text-sm uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                        Mục lục
+                      </h1>
+                      {frontMatter.tableOfContents.map((a, index) => {
+                        return (
+                          <div
+                            key={index}
+                            className="py-1 text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400"
+                          >
+                            <Link href={`#${index + 1}`}>{a}</Link>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  )}
+                </div>
+              }
+            </div>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 lg:col-span-3 lg:row-span-2 lg:px-6 lg:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
               <div id="Share" className="flex pt-2 pb-2 text-sm text-gray-700 dark:text-gray-300">
@@ -158,7 +186,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 boxShadow:
                   'rgb(0 146 255 / 30%) 0px 1px 2px 0px, rgb(94 135 159 / 30%) 0px 2px 6px 2px',
               }}
-              className="mb-4 rounded-md border-[1px] border-indigo-600 border-opacity-60 bg-white p-4 shadow-md shadow-indigo-500/50 dark:border-gray-700 dark:bg-gray-900 lg:fixed lg:bottom-0 lg:w-[18.5rem]"
+              className="mb-4 rounded-md border-[1px] border-indigo-600 border-opacity-60 bg-white p-4 shadow-md shadow-indigo-500/50 dark:border-gray-700 dark:bg-gray-900 lg:col-span-3 lg:col-start-2 lg:row-start-3 lg:divide-y"
             >
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 lg:col-start-1 lg:row-start-2 lg:divide-y">
                 {tags && (
@@ -174,7 +202,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
                 {(next || prev) && (
-                  <div className="flex justify-between py-4 lg:block lg:space-y-8 lg:py-4">
+                  <div className="flex justify-between py-4">
                     {prev && (
                       <div>
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">

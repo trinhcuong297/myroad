@@ -73,7 +73,6 @@ export async function getStaticProps({ params }) {
 
 export default function Blog({ post, authorDetails, prev, next, samePostDetail }) {
   const { mdxSource, toc, frontMatter } = post
-
   return (
     <>
       {frontMatter.draft !== true ? (

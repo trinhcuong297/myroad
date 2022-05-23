@@ -5,25 +5,32 @@ tags: ['c', 'learnC']
 draft: false
 summary: 'Cài đặt IDE để viết code hoặc dùng IDE online để code'
 images: []
+tableOfContents: [
+'Môi trường lập trình C là gì?',
+'Cài đặt IDE',
+'IDE Dev-C++ lập trình C/C++',
+'IDE Visual Studio Code và MinGW lập trình C/C++',
+'Dùng IDE online',
+]
 ---
 
 > #### Mục lục
 >
-> - [Môi trường lập trình C là gì?](#s1)<br/>
-> - [Cài đặt IDE](#s2)<br/>
->   -- [IDE Dev-C++ lập trình C/C++](#s3)<br/>
->   -- [IDE Visual Studio Code và MinGW lập trình C/C++](#s4)<br/>
-> - [Dùng IDE online](#s5)<br/>
+> - [Môi trường lập trình C là gì?](#1)<br/>
+> - [Cài đặt IDE](#2)<br/>
+>   -- [IDE Dev-C++ lập trình C/C++](#3)<br/>
+>   -- [IDE Visual Studio Code và MinGW lập trình C/C++](#4)<br/>
+> - [Dùng IDE online](#5)<br/>
 
-## Môi trường lập trình C<br id="s1"></br>
+## Môi trường lập trình C<br id="1"></br>
 
 Môi trường lập trình C đơn giản là nơi bạn viết mã nguồn (source code), sau đó compiler sẽ biên dịch và chạy chương trình của bạn.
 
 Trong đây, mình sẽ giới thiệu đến các bạn 2 cách: cài đặt hoặc dùng online IDE.
 
-## Cài đặt IDE<br id="s2"></br>
+## Cài đặt IDE<br id="2"></br>
 
-#### 1. IDE Dev-C++ lập trình C/C++<br id="s3"></br>
+#### 1. IDE Dev-C++ lập trình C/C++<br id="3"></br>
 
 ![Dev-C++](https://a.fsdn.com/con/app/proj/orwelldevcpp/screenshots/devcpp5200.png/max/max/1)
 
@@ -33,7 +40,7 @@ Dev-C++ là một IDE khá thông dụng khi lập trình C/C++. Với Dev-C++, 
 
 [Link hướng dẫn chi tiết hơn](https://www.thegioididong.com/game-app/cach-tai-va-cai-dat-ide-dev-c-moi-nhat-compiler-c-1318620)
 
-#### 2. IDE Visual Studio Code và MinGW lập trình C/C++<br id="s4"></br>
+#### 2. IDE Visual Studio Code và MinGW lập trình C/C++<br id="4"></br>
 
 **_Bước 1: Cài đặt IDE_**
 
@@ -91,7 +98,7 @@ Xong rồi tắt VSCode đi, nhớ là **tắt đi** để VSCode reset lại nh
 
 Bạn cũng có thể cài thêm các extension auto compile (VD: C/C++ Compile Run - cho phép bạn ấn f6 là chương trình tự complie luôn)
 
-## Dùng IDE online<br id="s5"></br>
+## Dùng IDE online<br id="5"></br>
 
 Hiện nay có khá nhiều IDE online chạy C/C++ nhưng mình thấy những IDE online nhanh và tiện nhất là:
 

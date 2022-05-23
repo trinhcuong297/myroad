@@ -5,21 +5,28 @@ tags: ['c', 'learnC']
 draft: false
 summary: 'Các hàm xuất dữ liệu printf, fprintf, puts, putchar'
 images: []
+tableOfContents: [
+'printf()',
+'fprintf()',
+'puts()',
+'putchar()',
+'sprintf()',
+]
 ---
 
 > #### Mục lục
 >
-> - [printf()](#s1)<br/>
-> - [fprintf()](#s2)<br/>
-> - [puts()](#s3)<br/>
-> - [putchar()](#s4)<br/>
-> - [sprintf()](#s5)<br/>
+> - [printf()](#1)<br/>
+> - [fprintf()](#2)<br/>
+> - [puts()](#3)<br/>
+> - [putchar()](#4)<br/>
+> - [sprintf()](#5)<br/>
 
 Trong C hay trong bất kì ngôn ngữ lập trình nào, chúng ta đều có 2 cách để nhập và xuất dữ liệu:
 
 - Qua phương tiện nhập/xuất chuẩn (Input/Output)
 - Qua các tệp tin
-  Trong ngôn ngữ lập trình C, thư viện chuẩn cung cấp các hàm nhập và xuất và các hàm quản lý những dữ liệu này. Phương tiện nhập chuẩn thường là bàn phím và thư viện xuất chuẩn thường là màn hình (console). Nhập và xuất dữ liệu có thể hướng đến tập tin thay vì trên thiết bị nhập xuất chuẩn<span id="s1"></span>.
+  Trong ngôn ngữ lập trình C, thư viện chuẩn cung cấp các hàm nhập và xuất và các hàm quản lý những dữ liệu này. Phương tiện nhập chuẩn thường là bàn phím và thư viện xuất chuẩn thường là màn hình (console). Nhập và xuất dữ liệu có thể hướng đến tập tin thay vì trên thiết bị nhập xuất chuẩn<span id="1"></span>.
 
 ### printf()
 
@@ -78,7 +85,7 @@ Giá trị của hàm printf(): Khi thành công, hàm trả về số kí tự 
 int c = printf("Gia tri ham printf")   //c=
 ```
 
-<span id="s2"></span>
+<span id="2"></span>
 
 ### fprintf()
 
@@ -100,7 +107,7 @@ int main()
 Gia tri ham printf: 20
 ```
 
-<span id="s3"></span>
+<span id="3"></span>
 
 ### puts()
 
@@ -132,7 +139,7 @@ int main()
 }
 ```
 
-<span id="s4"></span>
+<span id="4"></span>
 
 ### putchar()
 
@@ -161,7 +168,7 @@ int main()
 }
 ```
 
-### sprintf()<br id="s5"></br>
+### sprintf()<br id="5"></br>
 
 Hàm sprintf() trong C là một hàm có sẵn trong header file stdio.h, giúp chúng ta tạo tạo một chuỗi đầu ra từ các biến với kiểu và định dạng khác nhau với cú pháp:
 
