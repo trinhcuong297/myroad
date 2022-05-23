@@ -1,11 +1,18 @@
 ---
-title: 'Code thiếu nhi - tin học đại cương - HUST'
+title: 'Thực hành tin học đại cương 2022 - HUST'
 date: '2022-5-10'
 tags: ['c', 'tips']
 draft: false
-summary: 'Đáp án thực hành tin đại cương trên lab.soict.hust.edu.vn 20212'
+summary: 'Đáp án thực hành tin đại cương trên lab.soict.hust.edu.vn - đại học Bách Khoa Hà Nội 2022'
 images: []
-tableOfContents: []
+tableOfContents:
+  [
+    'Bài 2: 2.1 đến 2.5',
+    'Bài 3: 3.1 đến 3.6',
+    'Bài 4: 4.1 đến 4.12',
+    'Bài 5: 5.1 đến 5.5',
+    'Bài 6: 6.1 đến 6.4',
+  ]
 ---
 
 Bài tập thực hành tin đại cương từ buổi 2 đến buổi 6 của mình =) Copy paste là 10 nha nhưng mình recommend các bạn tự làm và tham khảo ý tưởng của mình khi cần. Chúc các bạn học tốt A+ môn này!
@@ -13,6 +20,7 @@ Bài tập thực hành tin đại cương từ buổi 2 đến buổi 6 của m
 [Đề bài từ 2.1 đến 6.4](https://www.dropbox.com/s/t7yq7ypx6ucp3ia/T%C3%A0i%20li%E1%BB%87u%20th%E1%BB%B1c%20h%C3%A0nh%20T%C4%90C2022-IT1110-v2-26-42.pdf?dl=0)
 
 Với các bài tập này, chúng ta cần các kiến thức lập trình C cơ bản như [biến và hằng](https://myroad.vercel.app/blog/learn-c/bien-va-hang), [kiểu dữ liệu](https://myroad.vercel.app/blog/learn-c/kieu-du-lieu), [toán tử trong C](https://myroad.vercel.app/blog/learn-c/toan-tu-trong-c), [nhập trong C](https://myroad.vercel.app/blog/learn-c/ham-nhap-trong-c), [xuất trong C](https://myroad.vercel.app/blog/learn-c/ham-xuat-trong-c), [câu lệnh rẽ nhánh](https://myroad.vercel.app/blog/learn-c/cau-lenh-dieu-kien-va-re-nhanh), [vòng lặp](), [mảng]() và [chuỗi]() cùng việc sử dụng các thuật toán như so sánh, sắp xếp, tìm kiếm.
+<br id='1'></br>
 
 Để làm 2.1,2.2,2.3,2.4 bạn cần có các kiến thức: [biến và hằng](https://myroad.vercel.app/blog/learn-c/bien-va-hang), [kiểu dữ liệu](https://myroad.vercel.app/blog/learn-c/kieu-du-lieu), [toán tử trong C](https://myroad.vercel.app/blog/learn-c/toan-tu-trong-c), [nhập trong C](https://myroad.vercel.app/blog/learn-c/ham-nhap-trong-c), [xuất trong C](https://myroad.vercel.app/blog/learn-c/ham-xuat-trong-c),[câu lệnh rẽ nhánh](https://myroad.vercel.app/blog/learn-c/cau-lenh-dieu-kien-va-re-nhanh).
 
@@ -90,6 +98,8 @@ int main(){
     return 0;
 }
 ```
+
+<br id='2'></br>
 
 Để làm 3.1,3.2,3.3,3.4,3.5 bạn cần có các kiến thức: [biến và hằng](https://myroad.vercel.app/blog/learn-c/bien-va-hang), [kiểu dữ liệu](https://myroad.vercel.app/blog/learn-c/kieu-du-lieu), [toán tử trong C](https://myroad.vercel.app/blog/learn-c/toan-tu-trong-c), [nhập trong C](https://myroad.vercel.app/blog/learn-c/ham-nhap-trong-c), [xuất trong C](https://myroad.vercel.app/blog/learn-c/ham-xuat-trong-c),[câu lệnh rẽ nhánh](https://myroad.vercel.app/blog/learn-c/cau-lenh-dieu-kien-va-re-nhanh).
 
@@ -182,6 +192,8 @@ int main(){
 }
 
 ```
+
+<br id='3'></br>
 
 Từ mục 4 trở đi bạn phải sử dụng toàn bộ những khái niệm đã nói ở trên bao gồm [biến và hằng](https://myroad.vercel.app/blog/learn-c/bien-va-hang), [kiểu dữ liệu](https://myroad.vercel.app/blog/learn-c/kieu-du-lieu), [toán tử trong C](https://myroad.vercel.app/blog/learn-c/toan-tu-trong-c), [nhập trong C](https://myroad.vercel.app/blog/learn-c/ham-nhap-trong-c), [xuất trong C](https://myroad.vercel.app/blog/learn-c/ham-xuat-trong-c), [câu lệnh rẽ nhánh](https://myroad.vercel.app/blog/learn-c/cau-lenh-dieu-kien-va-re-nhanh), [vòng lặp](), [mảng]() và [chuỗi]() cùng việc sử dụng các thuật toán như so sánh, sắp xếp, tìm kiếm.
 
@@ -580,6 +592,8 @@ int main(){
 }
 ```
 
+<br id='4'></br>
+
 ```c
 //5.1
 #include<stdio.h>
@@ -716,6 +730,8 @@ int main(){
     return 0;
 }
 ```
+
+<br id='5'></br>
 
 ```c
 //6.1
