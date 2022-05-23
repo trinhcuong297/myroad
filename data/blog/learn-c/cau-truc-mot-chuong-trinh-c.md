@@ -15,8 +15,9 @@ tableOfContents: [
 >
 > - [Bộ kí tự của C](#1)<br/>
 > - [Cấu trúc chính của 1 chương trình C](#2)<br/>
+>   <br id="1"></br>
 
-## Bộ kí tự của C<br id="1"></br>
+## Bộ kí tự của C
 
 Khi code C, chúng ta chỉ dùng những kí tự dưới đây để viết, không nhiều hơn:
 
@@ -27,7 +28,9 @@ Khi code C, chúng ta chỉ dùng những kí tự dưới đây để viết, k
 | Các kí hiệu toán học | + - \* / = < > ( )                           |
 | Các kí tự đặc biệt   | . , : ; [ ] % # $ ' " \_ { } space ,...      |
 
-## Cấu trúc chính của 1 chương trình C<br id="2"></br>
+<br id="2"></br>
+
+## Cấu trúc chính của 1 chương trình C
 
 ```C
 #include <stdio.h> //Khai báo thư viện sử dụng

@@ -26,7 +26,7 @@ Trong C hay trong bất kì ngôn ngữ lập trình nào, chúng ta đều có 
 
 - Qua phương tiện nhập/xuất chuẩn (Input/Output)
 - Qua các tệp tin
-  Trong ngôn ngữ lập trình C, thư viện chuẩn cung cấp các hàm nhập và xuất và các hàm quản lý những dữ liệu này. Phương tiện nhập chuẩn thường là bàn phím và thư viện xuất chuẩn thường là màn hình (console). Nhập và xuất dữ liệu có thể hướng đến tập tin thay vì trên thiết bị nhập xuất chuẩn<span id="1"></span>.
+  Trong ngôn ngữ lập trình C, thư viện chuẩn cung cấp các hàm nhập và xuất và các hàm quản lý những dữ liệu này. Phương tiện nhập chuẩn thường là bàn phím và thư viện xuất chuẩn thường là màn hình (console). Nhập và xuất dữ liệu có thể hướng đến tập tin thay vì trên thiết bị nhập xuất chuẩn<br id="1"></br>.
 
 ### printf()
 
@@ -85,7 +85,7 @@ Giá trị của hàm printf(): Khi thành công, hàm trả về số kí tự 
 int c = printf("Gia tri ham printf")   //c=
 ```
 
-<span id="2"></span>
+<br id="2"></br>
 
 ### fprintf()
 
@@ -107,7 +107,7 @@ int main()
 Gia tri ham printf: 20
 ```
 
-<span id="3"></span>
+<br id="3"></br>
 
 ### puts()
 
@@ -139,7 +139,7 @@ int main()
 }
 ```
 
-<span id="4"></span>
+<br id="4"></br>
 
 ### putchar()
 

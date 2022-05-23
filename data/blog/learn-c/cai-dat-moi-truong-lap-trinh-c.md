@@ -22,15 +22,20 @@ tableOfContents: [
 >   -- [IDE Visual Studio Code và MinGW lập trình C/C++](#4)<br/>
 > - [Dùng IDE online](#5)<br/>
 
-## Môi trường lập trình C<br id="1"></br>
+<br id="1"></br>
+
+## Môi trường lập trình C
 
 Môi trường lập trình C đơn giản là nơi bạn viết mã nguồn (source code), sau đó compiler sẽ biên dịch và chạy chương trình của bạn.
 
 Trong đây, mình sẽ giới thiệu đến các bạn 2 cách: cài đặt hoặc dùng online IDE.
+<br id="2"></br>
 
-## Cài đặt IDE<br id="2"></br>
+## Cài đặt IDE
 
-#### 1. IDE Dev-C++ lập trình C/C++<br id="3"></br>
+<br id="3"></br>
+
+#### 1. IDE Dev-C++ lập trình C/C++
 
 ![Dev-C++](https://a.fsdn.com/con/app/proj/orwelldevcpp/screenshots/devcpp5200.png/max/max/1)
 
@@ -39,8 +44,9 @@ Dev-C++ là một IDE khá thông dụng khi lập trình C/C++. Với Dev-C++, 
 [Link tải Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)
 
 [Link hướng dẫn chi tiết hơn](https://www.thegioididong.com/game-app/cach-tai-va-cai-dat-ide-dev-c-moi-nhat-compiler-c-1318620)
+<br id="4"></br>
 
-#### 2. IDE Visual Studio Code và MinGW lập trình C/C++<br id="4"></br>
+#### 2. IDE Visual Studio Code và MinGW lập trình C/C++
 
 **_Bước 1: Cài đặt IDE_**
 
@@ -97,8 +103,9 @@ Bạn tải extension **C/C++** của Microsoft về:
 Xong rồi tắt VSCode đi, nhớ là **tắt đi** để VSCode reset lại nhé.
 
 Bạn cũng có thể cài thêm các extension auto compile (VD: C/C++ Compile Run - cho phép bạn ấn f6 là chương trình tự complie luôn)
+<br id="5"></br>
 
-## Dùng IDE online<br id="5"></br>
+## Dùng IDE online
 
 Hiện nay có khá nhiều IDE online chạy C/C++ nhưng mình thấy những IDE online nhanh và tiện nhất là:
 

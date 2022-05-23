@@ -30,7 +30,7 @@ tableOfContents:
 
 - Qua phương tiện nhập/xuất chuẩn (Input/Output)
 - Qua các tệp tin
-  Trong ngôn ngữ lập trình C, thư viện chuẩn cung cấp các hàm nhập và xuất và các hàm quản lý những dữ liệu này. Phương tiện nhập chuẩn thường là bàn phím và thư viện xuất chuẩn thường là màn hình (console). Nhập và xuất dữ liệu có thể hướng đến tập tin thay vì trên thiết bị nhập xuất chuẩn<span id="1"></span>.
+  Trong ngôn ngữ lập trình C, thư viện chuẩn cung cấp các hàm nhập và xuất và các hàm quản lý những dữ liệu này. Phương tiện nhập chuẩn thường là bàn phím và thư viện xuất chuẩn thường là màn hình (console). Nhập và xuất dữ liệu có thể hướng đến tập tin thay vì trên thiết bị nhập xuất chuẩn<br id="1"></br>.
 
 ### scanf()
 
@@ -45,7 +45,7 @@ scanf ( *format, &object1, &object2, … );
 
 Hàm `scanf` thành công trả về 1, thất bại trả về 0.
 
-<span id="2"></span>
+<br id="2"></br>
 
 ### fscanf()
 
@@ -88,7 +88,7 @@ Doc chuoi 1: |to|
 Doc so nguyen: |3|
 ```
 
-<span id="3"></span>
+<br id="3"></br>
 
 ### gets()
 
@@ -119,7 +119,7 @@ int main()
 Thử đi rồi biết :>
 ```
 
-<span id="4"></span>
+<br id="4"></br>
 
 ### fgets()
 
@@ -155,7 +155,9 @@ int main()
 }
 ```
 
-### getchar(), getch() và getche()<br id="5"></br>
+<br id="5"></br>
+
+### getchar(), getch() và getche()
 
 `getchar()` cho phép nhận 1 kí tự từ stdin **và trả về kí tự đó**.<br/>
 `getch()` và `getche()` cho phép nhận 1 kí tự trực tiếp từ bộ đệm bàn phím **và trả về kí tự đó**, nếu bộ đệm còn kí tự thì hàm sẽ chạy tiếp còn không thì sẽ tạm dừng chờ khi có kí tự xuất hiện thì hàm nhận ngay kí tự đó. Khác biệt duy nhất của 2 hàm là `getch()` thì không cho hiện kí tự đó còn `getche()` thì hiện nó lên màn hình.
@@ -180,7 +182,9 @@ int main(void) {
 }
 ```
 
-### kbhit()<br id="6"></br>
+<br id="6"></br>
+
+### kbhit()
 
 `kbhit()` dùng để kiểm tra xem trong bộ đệm bàn phím còn kí tự nào không, nếu rỗng trả về 0, khác rỗng trả về giá trị khác 0.
 
@@ -188,7 +192,9 @@ int main(void) {
 kbhit();
 ```
 
-### fflush()<br id="7"></br>
+<br id="7"></br>
+
+### fflush()
 
 Đôi khi các kí tự còn lại trong bộ đệm bàn phím sẽ làm trôi mất các hàm như gets(), getch(), .. nên để làm sạch bộ đệm bàn phím ta sử dụng `fflush`.
 

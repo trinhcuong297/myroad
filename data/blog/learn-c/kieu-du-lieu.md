@@ -24,7 +24,9 @@ tableOfContents: [
 > - [typedef](#5)<br/>
 > - [void](#6)<br/>
 
-### Trong C có các kiểu dữ liệu sau đây:<br id="1"></br>
+<br id="1"></br>
+
+### Trong C có các kiểu dữ liệu sau đây:
 
 | Type            | Size(bytes) | Format Specifier                  | Phạm vi                                                                  |
 | --------------- | ----------- | --------------------------------- | ------------------------------------------------------------------------ |
@@ -44,18 +46,22 @@ tableOfContents: [
 | `typedef`       |             |                                   | là kiểu dữ liệu người dùng tự định nghĩa                                 |
 | `void`          |             |                                   | là kiểu dữ liệu xác định không có giá trị nào                            |
 
-### Bảng ASCII<br id="2"></br>
+<br id="2"></br>
+
+### Bảng ASCII
 
 ![Bảng ASCII](https://chiasekinang.com/wp-content/uploads/2020/12/bang-ma-ascii_table.png)
+<br id="3"></br>
 
-### Kiểu dữ liệu logic<br id="3"></br>
+### Kiểu dữ liệu logic
 
 C cũng ngầm định một cách không tường minh **kiểu logic**:
 
 - Sai (`false`): giá trị 0
 - Đúng (`true`) : giá trị khác 0, thường là 1
+  <br id="4"></br>
 
-### enum<br id="4"></br>
+### enum
 
 `enum` là kiểu dữ liệu do người dùng định nghĩa, được sử dụng chủ yếu **để gán các tên** cho các hằng số, các tên giúp một chương trình dễ đọc và bảo trì.
 
@@ -132,7 +138,9 @@ int main()  {
 [Note] previous definition of 'failed' was here
 ```
 
-### typedef<br id="5"></br>
+<br id="5"></br>
+
+### typedef
 
 Ngoài ra, bạn có thể tự định nghĩa kiểu dữ liệu bằng `typedef`:<br/>
 `typedef <kiểu dữ liệu> <tên biến>`
@@ -150,7 +158,9 @@ int main(){
 }
 ```
 
-### void<br id="6"></br>
+<br id="6"></br>
+
+### void
 
 Kỹ hơn về `void` : Hàm trả về không có giá trị, Hàm không có tham số truyền vào, hoặc cả 2, hoặc là con trỏ kiểu void.
 
