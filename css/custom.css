@@ -5,7 +5,8 @@ pre {
   max-height: 85vh;
 }
 pre::-webkit-scrollbar {
-  width: 0.4rem;
+  width: 0.5rem;
+  height: 0.8rem;
 }
 
 /* Track */
@@ -22,5 +23,21 @@ pre::-webkit-scrollbar-thumb {
 
 /* Handle on hover */
 pre::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  from {
+    background-image: radial-gradient(
+      circle,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
+  }
+  to {
+    background-image: radial-gradient(
+      circle,
+      rgba(148, 187, 233, 1) 0%,
+      rgba(238, 174, 202, 1) 100%
+    );
+  }
 }
