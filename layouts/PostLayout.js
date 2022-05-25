@@ -111,9 +111,9 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 boxShadow:
                   'rgb(0 146 255 / 30%) 0px 1px 2px 0px, rgb(94 135 159 / 30%) 0px 2px 6px 2px',
               }}
-              className={`mb-3 hidden divide-gray-200 rounded-md border-[1px] border-indigo-600 border-opacity-60 bg-white p-4 p-3 text-sm font-medium leading-5 shadow-md shadow-indigo-500/50 duration-1000 dark:divide-gray-700 dark:border-gray-700 dark:bg-gray-900 lg:${
+              className={`mb-3 hidden divide-gray-200 rounded-md border-[1px] border-indigo-600 border-opacity-60 bg-white p-4 p-3 text-sm font-medium leading-5 shadow-md shadow-indigo-500/50 duration-1000 dark:divide-gray-700 dark:border-gray-700 dark:bg-gray-900 ${
                 show
-                  ? 'fixed translate-y-0 lg:w-[18.5rem]'
+                  ? 'fixed block translate-y-0 lg:w-[18.5rem]'
                   : 'mt-[1rem] lg:col-span-1 lg:col-start-1 lg:row-start-2 lg:h-min lg:divide-y'
               } lg:block `}
             >
