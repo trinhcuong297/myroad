@@ -8,6 +8,8 @@ import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
+import smoothscroll from 'smoothscroll-polyfill'
 import SocialIcon from '@/components/social-icons'
 import Draggable from 'react-draggable'
 
@@ -22,6 +24,18 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children, samePost }) {
   const { slug, fileName, date, title, tags } = frontMatter
   const { asPath, pathname } = useRouter()
+  const [show, setShow] = useState(false)
+
+  useEffect(() => {
+    smoothscroll.polyfill()
+    const handleWindowScroll = () => {
+      if (window.scrollY > 150) setShow(true)
+      else setShow(false)
+    }
+
+    window.addEventListener('scroll', handleWindowScroll)
+    return () => window.removeEventListener('scroll', handleWindowScroll)
+  }, [])
   return (
     <SectionContainer>
       <BlogSEO
@@ -97,25 +111,51 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 boxShadow:
                   'rgb(0 146 255 / 30%) 0px 1px 2px 0px, rgb(94 135 159 / 30%) 0px 2px 6px 2px',
               }}
-              className="mb-3 hidden divide-gray-200 rounded-md border-[1px] border-indigo-600 border-opacity-60 bg-white p-4 p-3 text-sm font-medium leading-5 shadow-md shadow-indigo-500/50 dark:divide-gray-700 dark:border-gray-700 dark:bg-gray-900 lg:fixed lg:bottom-0 lg:block lg:w-[18.5rem]"
+              className={`mb-3 hidden divide-gray-200 rounded-md border-[1px] border-indigo-600 border-opacity-60 bg-white p-4 p-3 text-sm font-medium leading-5 shadow-md shadow-indigo-500/50 duration-1000 dark:divide-gray-700 dark:border-gray-700 dark:bg-gray-900 lg:${
+                show
+                  ? 'fixed translate-y-0 lg:w-[18.5rem]'
+                  : 'mt-[1rem] lg:col-span-1 lg:col-start-1 lg:row-start-2 lg:h-min lg:divide-y'
+              } lg:block `}
             >
               {
-                <div className="flex justify-between py-4 lg:block lg:space-y-8 lg:py-4 ">
-                  {prev && (
-                    <div>
-                      <h1 className="text-sm uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                        Mục lục
-                      </h1>
-                      {frontMatter.tableOfContents.map((a, index) => {
-                        return (
-                          <div
-                            key={index}
-                            className="py-1 text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400"
-                          >
-                            <Link href={`#${index + 1}`}>{a}</Link>
+                <div className="flex justify-between py-4 lg:block lg:space-y-4 lg:py-4 ">
+                  <div>
+                    <h1 className="text-sm uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                      Mục lục
+                    </h1>
+                    {frontMatter.tableOfContents.map((a, index) => {
+                      return (
+                        <div
+                          key={index}
+                          className="py-1 text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400"
+                        >
+                          <Link href={`#${index + 1}`}>{a}</Link>
+                        </div>
+                      )
+                    })}
+                  </div>
+                  {(next || prev) && (
+                    <div className="flex justify-between border-t-2 pt-4">
+                      {prev && (
+                        <div>
+                          <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                            Post trước
+                          </h2>
+                          <div className="text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400">
+                            <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                           </div>
-                        )
-                      })}
+                        </div>
+                      )}
+                      {next && (
+                        <div>
+                          <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                            Post sau
+                          </h2>
+                          <div className="text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400">
+                            <Link href={`/blog/${next.slug}`}>{next.title}</Link>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
