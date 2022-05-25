@@ -12,6 +12,7 @@ import { useEffect, useState } from 'react'
 import smoothscroll from 'smoothscroll-polyfill'
 import SocialIcon from '@/components/social-icons'
 import Draggable from 'react-draggable'
+import LoveIt from '@/components/loveIt'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -120,6 +121,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               {
                 <div className="flex justify-between py-4 lg:block lg:space-y-4 lg:py-4 ">
                   <div>
+                    <LoveIt />
                     <h1 className="text-sm uppercase tracking-wide text-gray-500 dark:text-gray-400">
                       Mục lục
                     </h1>
