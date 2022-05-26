@@ -201,11 +201,11 @@ Từ mục 4 trở đi bạn phải sử dụng toàn bộ những khái niệm 
 //4.1
 #include <stdio.h>
 
-//hàm ex(a) dưới đây dùng để tính giai thừa của 1 số nguyên n
-double ex(int a){
-    double res =1;
-    for(int i=0;i<a;i++ ){
-        res *= a--;
+//hàm ex(a) du?i dây dùng d? tính giai th?a c?a 1 s? nguyên n
+int ex(int a){
+    int res =1;
+    for(int i=1;i<a+1;i++ ){
+        res *= i;
     }
     return res;
 }
@@ -214,7 +214,7 @@ int main(){
     int a,c;
     scanf("%d",&a);
 
-    //xét điều kiện đầu vào của a xem đúng chưa?
+    //xét di?u ki?n d?u vào c?a a xem dúng chua?
     if(a<0||a>=8){
         printf("ERROR");
         return 0;
