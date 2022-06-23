@@ -769,26 +769,31 @@ int main(){
 ```
 
 ```c
-//6.2 - thuc ra la 6.1 tai vi he thong sai test case
-#include<stdio.h>
-#include<string.h>
-#define MAXLEN 100000
+//6.2
+#include <stdio.h>
+#include <string.h>
+
 int main(){
-    char strS[MAXLEN];
-    char strT[MAXLEN];
-    int appear[255];
-    scanf("%s",strS);
-    for(int i=0;i< strlen(strS);i++) appear[(int)strS[i]]++;
-     scanf("%s",strT);
-    for(int i=0;i< strlen(strT);i++) appear[(int)strT[i]]++;
-    for(int i=0;i<255;i++){
-        if(appear[i]>0) printf("%c", (char)i);
-    }
-    printf("\n");
-    for(int i = 0;i<255;i++){
-        if(appear[i]>0) printf("%d \n",appear[i]);
-    }
-    return 0;
+	char titleIn[1000];          //Noi luu chuoi nhap vao
+	int titleStart=0;
+	fgets(titleIn,1000,stdin);  //lay chuoi vao titleIn tu stdin
+
+	for(int i=0;i<strlen(titleIn)-1;i++){
+		if(titleIn[i]!=' '){  //khi tim thay gia tri khac ' ' dau tien thi bat dau in chuoi
+			titleStart=1;	  //muc dich de loai cac dau ' ' o dau tien
+		}
+		if(titleStart==1){
+			if(titleIn[i]==' '&&titleIn[i+1]==' '){ // neu tim thay dau ' ' va dang sau no lai co dau ' '
+													// thi bo qua khong in
+				continue;
+			}else if(titleIn[i]==' '&&i==(strlen(titleIn)-2)){ //neu dau cach o cuoi cung thi bo qua khong in
+				continue;
+			}else {
+				printf("%c",titleIn[i]); //in ra ki tu du dieu kien
+			}
+		}
+	}
+	return 0;
 }
 ```
 
