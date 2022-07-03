@@ -20,11 +20,12 @@ tableOfContents: [
 > - [Vòng lặp for](#2)<br/>
 > - [Vòng lặp while](#3)<br/>
 > - [Vòng lặp do...while](#4)<br/>
-> - [Vòng lặp lồng nhau - nested route](#5)<br/> > <br id="1"></br>
+> - [Vòng lặp lồng nhau - nested route](#5)<br/>
+> - [Câu lệnh điều khiển vòng lặp - break, continue](#6)<br/> <br id="1"></br>
 
 ## Vòng lặp là gì và dùng làm gì nhỉ?
 
-Khi bạn viết chương trình, bạn sẽ gặp vấn đề kiểu như bạn muốn in ra các số từ 1 đến 1000 chẳng hạn nhưng mà nếu bạn dùng lệnh `printf` 1000 lần thì ... chắc viết xong bỏ nghề. Đó là lý do vòng lặp ra đời.
+Khi bạn viết chương trình, bạn có thể gặp vấn đề như: bạn muốn in ra các số từ 1 đến 1000 nhưng nếu bạn dùng lệnh `printf` 1000 lần thì ... chắc viết xong bỏ nghề. Đó là lý do vòng lặp ra đời.
 
 Vòng lặp sẽ cho phép chúng ta lặp lại câu lệnh hay nhóm các câu lệnh nhiều lần, cụ thể trong trường hợp trên là lặp lại câu lệnh `printf`. Để hiểu rõ hơn thì chúng ta sẽ đến với vòng `for` dưới đây.
 
@@ -155,4 +156,47 @@ step i:1 j:2
 step i:2 j:0
 step i:2 j:1
 step i:2 j:2
+```
+
+<br id="6"></br>
+
+## Câu lệnh điều khiển vòng lặp - break, continue
+
+Lệnh `break` giúp bạn thoát ra khỏi các lệnh lặp for, while, do...while, switch.
+
+```c
+//Ví dụ
+for(int i=0;i<10;i++){
+    printf("%d ",i);
+    if(i==6){
+        break;
+    }
+}
+
+/*Kết quả là:
+0 1 2 3 4 5 6
+
+Bởi vì khi i==6, hàm if thỏa mãn và chạy lệnh break
+Lệnh break sẽ đưa chương trình thoát ra khỏi vòng lặp (dừng vòng for)
+```
+
+Khi vòng lặp chạy gặp lệnh `continue` nó sẽ bỏ qua tất cả các lệnh đằng sau `continue` trong lần lặp đó và nhảy sang lượt lặp tiếp theo.
+
+```c
+//Ví dụ:
+for(int i=0;i<4;i++){
+    printf("Lan lap %d ",i);
+    if(i==2){
+        continue;
+    }
+    printf("OK\n");
+}
+/*Kết quả:
+Lan lap 0 OK
+Lan lap 1 OK
+Lan lap 2
+Vòng lặp in ra "lan lap i" mỗi lần lặp
+Nhưng tại lần lặp thứ 2, hàm if thỏa mãn và lệnh continue được chạy
+Chương trình bỏ qua lệnh đằng sau if (bỏ qua lệnh printf("OK\n"))
+Và chạy luôn lượt tiếp theo là "Lan lap 3 OK"
 ```
