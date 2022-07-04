@@ -30,6 +30,12 @@ export default function App({ Component, pageProps }) {
         <meta name="geo.placename" content="Hanoi" />
         <meta name="geo.position" content="21.004296;105.843723" />
         <meta name="ICBM" content="21.004296, 105.843723" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9230058370823383"
+          // eslint-disable-next-line react/no-unknown-property
+          crossorigin="anonymous"
+        ></script>
         {/* <script
           src="https://giscus.app/client.js"
           data-repo="trinhcuong297/blogcuacuong"
