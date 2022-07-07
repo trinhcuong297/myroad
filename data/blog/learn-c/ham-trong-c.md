@@ -16,6 +16,8 @@ tableOfContents: [
 > - [Hàm là gì và dùng làm gì](#1)<br/>
 > - [Cấu trúc hàm - function](#2)<br/>
 
+<br id="1" />
+
 ## Hàm là gì và dùng làm gì?
 
 Trong khi viết chương trình, chúng ta sẽ gặp phải tình trạng : muốn tính giai thừa của `4!`, rồi `5!`,... thì chúng ta phải code lại nhiều lần đoạn code tính giai thừa như dưới đây:
