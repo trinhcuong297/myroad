@@ -41,3 +41,7 @@ pre::-webkit-scrollbar-thumb:hover {
     );
   }
 }
+.prose a {
+  text-decoration: underline !important;
+  text-underline-position: under;
+}
