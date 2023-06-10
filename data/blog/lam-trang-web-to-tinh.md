@@ -20,8 +20,8 @@ Và nó đây: [web demo](https://justloveu.vercel.app/indexSample.html)
 
 ## Share code để anh em tự custom đây
 
-[Code trên github](https://github.com/trinhcuong297/totinh/blob/master/indexSample.html)
-[File HTML cho ae không dùng git](https://drive.google.com/file/d/1VKfiwnaeF5OpdkdLke6AZk_K737Q8ggs/view?usp=sharing)
+[Code trên github](https://github.com/trinhcuong297/mylove/blob/master/index2.html)
+[File HTML cho ae không dùng git](https://drive.google.com/file/d/1ilLRkQX2zzVA_0jnQ2CqW_JXKdo4WBuC/view?usp=sharing)
 Sau khi bạn xem web thì bạn cũng thấy được web này 100% thành công rồi. Và để các bạn tạo ra 1 web như vậy thì tự code sẽ khá mất thời gian. Bởi vậy mình code logic hộ các bạn luôn, các bạn lấy code [tại đây](https://github.com/trinhcuong297/totinh/blob/master/indexSample.html) và chỉnh những gì các bạn thích là được.
 
 Hoặc là các bạn có thể tải file HTML về, `open with` với 1 trình soạn thảo code nào đấy, chỉnh sửa như hướng dẫn bên dưới này, xong rồi lưu lại và gửi cho "bạn" là được.
